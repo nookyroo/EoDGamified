@@ -9,7 +9,7 @@ namespace EchoesOfDiscordia {
   window.addEventListener("load", start);
   function start(_event: Event): void {
     let scenes: ƒS.Scenes = [
-      { scene: kazagaardCityWall, name: "Wester City Gate" }
+      { scene: kazagaardCityWall, name: "Western City Gate" }
     ];
 
 // start the sequence

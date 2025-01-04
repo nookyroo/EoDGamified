@@ -1,5 +1,5 @@
 namespace Template {
-  export async function kazagaardCityWall(): ƒS.SceneReturn {
+  export async function kazagaardCityWall(): ƒS.SceneReturn }
     console.log("Kazagaard Western City Gate");
   
    // cpms = characters per millisecond
@@ -116,5 +116,6 @@ namespace Template {
         ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
         await ƒS.update(2);
 
+}
 }
 }
