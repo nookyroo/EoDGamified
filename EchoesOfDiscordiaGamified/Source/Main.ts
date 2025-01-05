@@ -4,24 +4,6 @@ namespace EchoesOfDiscordia {
 
   console.log("FudgeStory EchoesOfDiscordia starting");
 
-
-  //Start Scene NAchschauen hier start
-  window.addEventListener("load", start);
-  function start(_event: Event): void {
-    // let scenes: ƒS.Scenes = [
-    //   { scene: kazagaardCityWall, name: "Western City Gate" }
-    // ];
-
-    // // start the sequence
-    // ƒS.Progress.go(scenes);
-
-
-    // cpms = characters per millisecond (DODO)
-    ƒS.Speech.setTickerDelays(40, 5000);
-
-
-  }
-
   //Sound
   export let sound = {
     // Kazagaard
@@ -140,13 +122,22 @@ namespace EchoesOfDiscordia {
 
   }
 
-  // Scene Hierarchy fragen
-  let scenes: ƒS.Scenes = [
-    { scene: kazagaardCityWall, name: "Start Scene" },
-    // { scene: kazagaardStreets, name: "Intro Scene" },
+  //Start Scene NAchschauen hier start
+  window.addEventListener("load", start);
+  function start(_event: Event): void {
+    // Scene Hierarchy fragen
+    let scenes: ƒS.Scenes = [
+      { scene: kazagaardCityWall, name: "Western City Gate" },
+      // { scene: kazagaardStreets, name: "Intro Scene" }
+    ];
 
-  ];
+    // // start the sequence
+    ƒS.Progress.go(scenes);
 
-  console.log(document);
-  // ƒS.Progress.go(scenes);
+
+    // cpms = characters per millisecond (DODO)
+    ƒS.Speech.setTickerDelays(40, 5000);
+
+
+  }
 }

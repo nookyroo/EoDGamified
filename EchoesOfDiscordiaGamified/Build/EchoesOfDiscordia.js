@@ -4,17 +4,6 @@ var EchoesOfDiscordia;
     EchoesOfDiscordia.ƒ = FudgeCore;
     EchoesOfDiscordia.ƒS = FudgeStory;
     console.log("FudgeStory EchoesOfDiscordia starting");
-    //Start Scene NAchschauen hier start
-    window.addEventListener("load", start);
-    function start(_event) {
-        // let scenes: ƒS.Scenes = [
-        //   { scene: kazagaardCityWall, name: "Western City Gate" }
-        // ];
-        // // start the sequence
-        // ƒS.Progress.go(scenes);
-        // cpms = characters per millisecond (DODO)
-        EchoesOfDiscordia.ƒS.Speech.setTickerDelays(40, 5000);
-    }
     //Sound
     EchoesOfDiscordia.sound = {
         // Kazagaard
@@ -125,13 +114,19 @@ var EchoesOfDiscordia;
             }
         }
     };
-    // Scene Hierarchy fragen
-    let scenes = [
-        { scene: EchoesOfDiscordia.kazagaardCityWall, name: "Start Scene" },
-        // { scene: kazagaardStreets, name: "Intro Scene" },
-    ];
-    console.log(document);
-    // ƒS.Progress.go(scenes);
+    //Start Scene NAchschauen hier start
+    window.addEventListener("load", start);
+    function start(_event) {
+        // Scene Hierarchy fragen
+        let scenes = [
+            { scene: EchoesOfDiscordia.kazagaardCityWall, name: "Western City Gate" },
+            // { scene: kazagaardStreets, name: "Intro Scene" }
+        ];
+        // // start the sequence
+        EchoesOfDiscordia.ƒS.Progress.go(scenes);
+        // cpms = characters per millisecond (DODO)
+        EchoesOfDiscordia.ƒS.Speech.setTickerDelays(40, 5000);
+    }
 })(EchoesOfDiscordia || (EchoesOfDiscordia = {}));
 var EchoesOfDiscordia;
 (function (EchoesOfDiscordia) {
