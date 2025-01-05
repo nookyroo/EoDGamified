@@ -147,6 +147,6 @@ namespace EchoesOfDiscordia {
 
   ];
 
-  console.log(document.body);
+  console.log(document);
   // ƒS.Progress.go(scenes);
 }

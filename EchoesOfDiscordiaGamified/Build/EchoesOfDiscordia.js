@@ -130,7 +130,7 @@ var EchoesOfDiscordia;
         { scene: EchoesOfDiscordia.kazagaardCityWall, name: "Start Scene" },
         // { scene: kazagaardStreets, name: "Intro Scene" },
     ];
-    console.log(document.body);
+    console.log(document);
     // ƒS.Progress.go(scenes);
 })(EchoesOfDiscordia || (EchoesOfDiscordia = {}));
 var EchoesOfDiscordia;
