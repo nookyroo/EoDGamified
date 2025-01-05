@@ -25,52 +25,52 @@ namespace EchoesOfDiscordia {
     //Kazagaard
     kazagaardCityWall: {
       name: "Eastern City Wall",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_Streets.png",
     },
     kazagaardStreets: {
       name: "City",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_Streets.jpg",
     },
     kazagaardRooftops: {
       name: "Rooftops",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_KoliaTemple.jpg",
     },
     kazagaardTemple: {
       name: "Temple of Kolia",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_KoliaTemple.jpg",
     },
     kazagaardLiquorStore: {
       name: "Liquor Store",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_ThievesGuildHideout.jpg",
     },
 
     //Moonhaven
     moonhavenLowerCity: {
       name: "Lower City",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_Streets.jpg",
     },
     moonhavenUpperCity: {
       name: "Upper City",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_Streets.jpg",
     },
     moonhavenUniversity: {
       name: "University",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_Streets.jpg",
     },
     moonhavenTempleAndano: {
       name: "Temple of Andano",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_Streets.jpg",
     },
     moonhavenTomb: {
       name: "Artefact Chamber",
-      background: "Images/Locations/hiking-trail.png",
+      background: "Images/Locations/Kazagaard_Streets.jpg",
     },
   };
 
   //Characters
   export let characters = {
     gameDirector: {
-      name: ""
+      name: "Game Director"
     },
     protagonist: {
       name: "You"
@@ -100,7 +100,7 @@ namespace EchoesOfDiscordia {
         angry: "Images/Characters/VanessaAngry.png",
         surprised: "Images/Characters/VanessaSurprise.png",
         scared: "Images/Characters/VanessaScared.png",
-        embarrassed: "Images/Characters/VanessaEmbarrassed.png",
+        embarrassed: "Images/Characters/VanessaEmbarrased.png",
         confused: "Images/Characters/VanessaConfused.png"
       }
     },
