@@ -12,6 +12,7 @@ declare namespace EchoesOfDiscordia {
         moonhavenTempleAndano: string;
         moonhavenTomb: string;
     };
+
     let locations: {
         kazagaardCityWall: {
             name: string;
@@ -58,6 +59,7 @@ declare namespace EchoesOfDiscordia {
             background: string;
         };
     };
+    
     let characters: {
         gameDirector: {
             name: string;

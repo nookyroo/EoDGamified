@@ -134,8 +134,8 @@ namespace EchoesOfDiscordia {
 
     // Scene Hierarchy fragen
     let scenes: ƒS.Scenes = [
-     // { scene: kazagaardCityWall, name: "Western City Gate" },
-    { scene: kazagaardRooftops, name: "Rooftops" },
+    { scene: kazagaardCityWall, name: "Western City Gate" },
+    //{ scene: kazagaardRooftops, name: "Rooftops" },
       // { scene: kazagaardLiquorStore, name: "Rooftops" },
       // { scene: kazagaardStreets, name: "Rooftops" },
 

@@ -123,8 +123,8 @@ var EchoesOfDiscordia;
     function start(_event) {
         // Scene Hierarchy fragen
         let scenes = [
-            // { scene: kazagaardCityWall, name: "Western City Gate" },
-            { scene: EchoesOfDiscordia.kazagaardRooftops, name: "Rooftops" },
+            { scene: EchoesOfDiscordia.kazagaardCityWall, name: "Western City Gate" },
+            //{ scene: kazagaardRooftops, name: "Rooftops" },
             // { scene: kazagaardLiquorStore, name: "Rooftops" },
             // { scene: kazagaardStreets, name: "Rooftops" },
         ];
@@ -229,44 +229,45 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
         //Choice
-        //     let vanessaCharactersheet = true
-        //     do {
-        //       let openVanessaCharactersheet = {
-        //         follow: "Follow her.",
-        //         infos: "Learn more about her."
-        //       };
-        //       let choiceToOpen = await ƒS.Menu.getInput(openVanessaCharactersheet, "What do you want to do?");
-        //       switch (choiceToOpen) {
-        //         //scene continues here then
-        //         case openVanessaCharactersheet.infos:
-        //           await ƒS.Speech.tell(characters.gameDirector, "<i>This option will end the city investigation and your progress will be lost.</i>");
-        //           await ƒS.Speech.tell(characters.gameDirector, "<i>Do you still want to leave?</i>");
-        //           let confirmation = {
-        //             yes: "Yes, take me there.",
-        //             no: "No."
-        //           };
-        //           let confirmationClick = await ƒS.Menu.getInput(confirmation, "choices");
-        //           if (confirmationClick == confirmation.no)
-        //             vanessaCharactersheet = false
-        //         default:
-        //           await ƒS.Character.hide(characters.Vanessa);
-        //           await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
-        //           await ƒS.update(.1);
-        //           await ƒS.Speech.tell(characters.Vanessa, "Let's get going then.");
-        //           await ƒS.Character.hide(characters.Vanessa);
-        //           await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
-        //           await ƒS.update(.1);
-        // break
-        //       }
-        //     } while (vanessaCharactersheet)
-        //     await ƒS.Character.hide(characters.Vanessa);
-        //         await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
-        //         await ƒS.update(.1);
-        //         await ƒS.Speech.tell(characters.Vanessa, "ahhhh");
-        //         await ƒS.Character.hide(characters.Vanessa);
-        //         await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
-        //         await ƒS.update(.1);
-        //         await ƒS.Speech.tell(characters.protagonist, "Yay...");
+        let vanessaCharactersheet = true;
+        do {
+            let openVanessaCharactersheet = {
+                follow: "Follow her.",
+                infos: "Learn more about her."
+            };
+            let choiceToOpen = await EchoesOfDiscordia.ƒS.Menu.getInput(openVanessaCharactersheet, "choices");
+            switch (choiceToOpen) {
+                //scene continues here then
+                case openVanessaCharactersheet.infos:
+                    await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>This option will end the city investigation and your progress will be lost.</i>");
+                    await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>Do you still want to leave?</i>");
+                    let confirmation = {
+                        yes: "Yes, take me there.",
+                        no: "No."
+                    };
+                    //Insert if statement for yes with link
+                    let confirmationClick = await EchoesOfDiscordia.ƒS.Menu.getInput(confirmation, "choices");
+                    if (confirmationClick == confirmation.no)
+                        vanessaCharactersheet = false;
+                default:
+                    await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
+                    await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.happy, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
+                    await EchoesOfDiscordia.ƒS.update(.1);
+                    await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "Let's get going then.");
+                    await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
+                    await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
+                    await EchoesOfDiscordia.ƒS.update(.1);
+                    vanessaCharactersheet = false;
+            }
+        } while (vanessaCharactersheet);
+        await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
+        await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.happy, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
+        await EchoesOfDiscordia.ƒS.update(.1);
+        await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "ahhhh");
+        await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
+        await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
+        await EchoesOfDiscordia.ƒS.update(.1);
+        await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.protagonist, "Yay...");
         // let optionsElement = await ƒS.Menu.getInput(options, "choices");
         // switch (optionsElement) {
         //   case options.continue:
@@ -332,7 +333,7 @@ var EchoesOfDiscordia;
         //     ƒS.Speech.clear();
         //     ƒS.Speech.hide();
         // }
-        EchoesOfDiscordia.ƒS.update(1);
+        //ƒS.update(1);
     }
     EchoesOfDiscordia.kazagaardCityWall = kazagaardCityWall;
 })(EchoesOfDiscordia || (EchoesOfDiscordia = {}));
@@ -486,6 +487,7 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>Vanessa doesn't answer, but you notice a light shift in her demeanor as she kept on walking. </i>");
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>You’re jolted from your musings as the massive clock ahead strikes. Its hollow bell echoes through the alleys, sending a chill down your spine. </i>");
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>Kolias Temple looms in the distance, its imposing structure a silent sentinel. It seems to watch over everything, guarding ancient secrets yet to be unraveled.  </i>");
+        console.log(DOMTokenList);
         // Seeing ice
         let ice = true;
         do {
@@ -493,7 +495,7 @@ var EchoesOfDiscordia;
                 investigate: "If you want to press on about the matter, you can watch the corresponding episode on YouTube.",
                 ignore: "Ignore the situation and follow"
             };
-            let choice = await EchoesOfDiscordia.ƒS.Menu.getInput(option1, "What do you want to do?");
+            let choice = await EchoesOfDiscordia.ƒS.Menu.getInput(option1, "choices");
             switch (choice) {
                 //scene continues here then
                 case option1.investigate:

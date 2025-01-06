@@ -100,51 +100,51 @@ namespace EchoesOfDiscordia {
 
     //Choice
 
-//     let vanessaCharactersheet = true
-//     do {
-//       let openVanessaCharactersheet = {
-//         follow: "Follow her.",
-//         infos: "Learn more about her."
-//       };
+    let vanessaCharactersheet = true
+    do {
+      let openVanessaCharactersheet = {
+        follow: "Follow her.",
+        infos: "Learn more about her."
+      };
 
-//       let choiceToOpen = await ƒS.Menu.getInput(openVanessaCharactersheet, "What do you want to do?");
-//       switch (choiceToOpen) {
-//         //scene continues here then
-//         case openVanessaCharactersheet.infos:
-//           await ƒS.Speech.tell(characters.gameDirector, "<i>This option will end the city investigation and your progress will be lost.</i>");
-//           await ƒS.Speech.tell(characters.gameDirector, "<i>Do you still want to leave?</i>");
+      let choiceToOpen = await ƒS.Menu.getInput(openVanessaCharactersheet, "choices");
+      switch (choiceToOpen) {
+        //scene continues here then
+        case openVanessaCharactersheet.infos:
+          await ƒS.Speech.tell(characters.gameDirector, "<i>This option will end the city investigation and your progress will be lost.</i>");
+          await ƒS.Speech.tell(characters.gameDirector, "<i>Do you still want to leave?</i>");
 
-//           let confirmation = {
-//             yes: "Yes, take me there.",
-//             no: "No."
-//           };
+          let confirmation = {
+            yes: "Yes, take me there.",
+            no: "No."
+          };
+//Insert if statement for yes with link
+          let confirmationClick = await ƒS.Menu.getInput(confirmation, "choices");
+          if (confirmationClick == confirmation.no)
+            vanessaCharactersheet = false
 
-//           let confirmationClick = await ƒS.Menu.getInput(confirmation, "choices");
-//           if (confirmationClick == confirmation.no)
-//             vanessaCharactersheet = false
-
-//         default:
-//           await ƒS.Character.hide(characters.Vanessa);
-//           await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
-//           await ƒS.update(.1);
-//           await ƒS.Speech.tell(characters.Vanessa, "Let's get going then.");
-//           await ƒS.Character.hide(characters.Vanessa);
-//           await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
-//           await ƒS.update(.1);
-// break
+        default:
+          await ƒS.Character.hide(characters.Vanessa);
+          await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
+          await ƒS.update(.1);
+          await ƒS.Speech.tell(characters.Vanessa, "Let's get going then.");
+          await ƒS.Character.hide(characters.Vanessa);
+          await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
+          await ƒS.update(.1);
+          vanessaCharactersheet = false
           
-//       }
+      }
 
-//     } while (vanessaCharactersheet)
+    } while (vanessaCharactersheet)
 
-//     await ƒS.Character.hide(characters.Vanessa);
-//         await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
-//         await ƒS.update(.1);
-//         await ƒS.Speech.tell(characters.Vanessa, "ahhhh");
-//         await ƒS.Character.hide(characters.Vanessa);
-//         await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
-//         await ƒS.update(.1);
-//         await ƒS.Speech.tell(characters.protagonist, "Yay...");
+    await ƒS.Character.hide(characters.Vanessa);
+        await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
+        await ƒS.update(.1);
+        await ƒS.Speech.tell(characters.Vanessa, "ahhhh");
+        await ƒS.Character.hide(characters.Vanessa);
+        await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
+        await ƒS.update(.1);
+        await ƒS.Speech.tell(characters.protagonist, "Yay...");
 
    
 
@@ -230,7 +230,7 @@ namespace EchoesOfDiscordia {
     //     ƒS.Speech.clear();
     //     ƒS.Speech.hide();
     // }
-    ƒS.update(1);
+    //ƒS.update(1);
 
   }
 }

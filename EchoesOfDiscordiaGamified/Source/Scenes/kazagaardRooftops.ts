@@ -52,7 +52,7 @@ namespace EchoesOfDiscordia {
         await ƒS.Speech.tell(characters.gameDirector, "<i>Vanessa doesn't answer, but you notice a light shift in her demeanor as she kept on walking. </i>");
         await ƒS.Speech.tell(characters.gameDirector, "<i>You’re jolted from your musings as the massive clock ahead strikes. Its hollow bell echoes through the alleys, sending a chill down your spine. </i>");
         await ƒS.Speech.tell(characters.gameDirector, "<i>Kolias Temple looms in the distance, its imposing structure a silent sentinel. It seems to watch over everything, guarding ancient secrets yet to be unraveled.  </i>");
-
+        console.log(DOMTokenList);
         // Seeing ice
         let ice = true
         do {
@@ -61,7 +61,7 @@ namespace EchoesOfDiscordia {
                 ignore: "Ignore the situation and follow"
             };
 
-            let choice = await ƒS.Menu.getInput(option1, "What do you want to do?");
+            let choice = await ƒS.Menu.getInput(option1, "choices");
             switch (choice) {
                 //scene continues here then
                 case option1.investigate:
@@ -86,8 +86,6 @@ namespace EchoesOfDiscordia {
                     if (choice2 == option2.street)
                         ice = false
             }
-
-            
         } while (ice)
         // option where next
 
