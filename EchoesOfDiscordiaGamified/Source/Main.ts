@@ -65,6 +65,12 @@ namespace EchoesOfDiscordia {
       name: "Artefact Chamber",
       background: "Images/Locations/Kazagaard_Streets.jpg",
     },
+
+    blackout: {
+      name: "Blackscreen",
+      background: "Images/Locations/Blackout.jpg",
+    },
+
   };
 
   //Characters
@@ -125,10 +131,14 @@ namespace EchoesOfDiscordia {
   //Start Scene NAchschauen hier start
   window.addEventListener("load", start);
   function start(_event: Event): void {
+
     // Scene Hierarchy fragen
     let scenes: ƒS.Scenes = [
-      { scene: kazagaardCityWall, name: "Western City Gate" },
-      // { scene: kazagaardStreets, name: "Intro Scene" }
+     // { scene: kazagaardCityWall, name: "Western City Gate" },
+    { scene: kazagaardRooftops, name: "Rooftops" },
+      // { scene: kazagaardLiquorStore, name: "Rooftops" },
+      // { scene: kazagaardStreets, name: "Rooftops" },
+
     ];
 
     // // start the sequence

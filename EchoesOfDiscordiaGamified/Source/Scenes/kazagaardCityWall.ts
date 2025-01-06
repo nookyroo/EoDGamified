@@ -14,7 +14,9 @@ namespace EchoesOfDiscordia {
     ƒS.Speech.show();
     await ƒS.update(1);
     await ƒS.Speech.tell(characters.gameDirector, "<i>Kazagaard. A city known for its prison and the mines, in which the criminals held there must work under harsh conditions.</i>");
+    ƒS.Sound.play(sound.kazagaardRooftops, 5, false);
     await ƒS.Speech.tell(characters.gameDirector, "<i>As you pass the City Gate a labyrinth of dark narrow alleys opens in front of you, giving the whole city a sinister and foreboding look.</i>");
+    ƒS.Sound.fade(sound.kazagaardRooftops, 0, 1);
     await ƒS.update(.1);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
     await ƒS.update(1);
@@ -93,82 +95,143 @@ namespace EchoesOfDiscordia {
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
     await ƒS.update(.1);
 
+   
+
 
     //Choice
-    let options = {
-      continue: "Follow her.",
-      Charactersheet: "Learn more about her"
-    };
 
-    let optionsElement = await ƒS.Menu.getInput(options, "choices");
-    switch (optionsElement) {
-      case options.continue:
-        //scene continues here then
-        await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
-        await ƒS.update(.1);
-        await ƒS.Speech.tell(characters.Vanessa, "Sooo... any sightseeing points in mind?");
+//     let vanessaCharactersheet = true
+//     do {
+//       let openVanessaCharactersheet = {
+//         follow: "Follow her.",
+//         infos: "Learn more about her."
+//       };
 
-      //Link to Charactersheet
-      case options.Charactersheet: //need to insert Link
-        await ƒS.Character.hide(characters.Vanessa);
-        await ƒS.update(1);
-        await ƒS.Speech.tell(characters.gameDirector, "<i>This option will exit the city inspection. All your progress will be lost. Do you still wish to continue?</i>");
+//       let choiceToOpen = await ƒS.Menu.getInput(openVanessaCharactersheet, "What do you want to do?");
+//       switch (choiceToOpen) {
+//         //scene continues here then
+//         case openVanessaCharactersheet.infos:
+//           await ƒS.Speech.tell(characters.gameDirector, "<i>This option will end the city investigation and your progress will be lost.</i>");
+//           await ƒS.Speech.tell(characters.gameDirector, "<i>Do you still want to leave?</i>");
+
+//           let confirmation = {
+//             yes: "Yes, take me there.",
+//             no: "No."
+//           };
+
+//           let confirmationClick = await ƒS.Menu.getInput(confirmation, "choices");
+//           if (confirmationClick == confirmation.no)
+//             vanessaCharactersheet = false
+
+//         default:
+//           await ƒS.Character.hide(characters.Vanessa);
+//           await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
+//           await ƒS.update(.1);
+//           await ƒS.Speech.tell(characters.Vanessa, "Let's get going then.");
+//           await ƒS.Character.hide(characters.Vanessa);
+//           await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
+//           await ƒS.update(.1);
+// break
+          
+//       }
+
+//     } while (vanessaCharactersheet)
+
+//     await ƒS.Character.hide(characters.Vanessa);
+//         await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
+//         await ƒS.update(.1);
+//         await ƒS.Speech.tell(characters.Vanessa, "ahhhh");
+//         await ƒS.Character.hide(characters.Vanessa);
+//         await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
+//         await ƒS.update(.1);
+//         await ƒS.Speech.tell(characters.protagonist, "Yay...");
+
+   
 
 
 
-        //Choices:
-        // let options = {
-        //  Temple: "Is that a Temple of Kolia over there?",
-        // Rooftops: "I can barely see anything here. I bet the view would be better up on the Rooftops.",
-        // LiquorStore: "I've heard Kazagaard has quite the famous Liquor Store?"
-        // }
+    // let optionsElement = await ƒS.Menu.getInput(options, "choices");
+    // switch (optionsElement) {
+    //   case options.continue:
+    //     //scene continues here then
+    //     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
+    //     await ƒS.update(.1);
+    //     await ƒS.Speech.tell(characters.Vanessa, "Sooo... any sightseeing points in mind?");
+    //     let locationPick = {
+    //       Temple: "Is that a Temple of Kolia over there?",
+    //       Rooftops: "I can barely see anything here. I bet the view would be better up on the Rooftops.",
+    //       LiquorStore: "I've heard Kazagaard has quite the famous Liquor Store?"
+    //     }
+    //     let pickedLocation = await ƒS.Menu.getInput(locationPick, "Let's go");
+    //     //let menu: ƒS.Menu = ƒS.Menu.create(locationPick, null);
+
+    //     break
 
 
-        //Lines Vanessa
 
-        //Temple
-        let optionsElement = await ƒS.Menu.getInput(options, "choices");
-        switch (optionsElement) {
-          case options.Temple:
-            // continue path here
-            await ƒS.Speech.tell(characters.Vanessa, "You believe in gods? Sure let's take a peek in there. The light shining through the window at this time of day is great.");
-            await ƒS.Character.hide(characters.Vanessa);
-            ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
-            await ƒS.update(2);
 
-            //Rooftops
-            let optionsElement = await ƒS.Menu.getInput(options, "choices");
-            switch (optionsElement) {
-              case options.Rooftops:
-                // continue path here
-                await ƒS.Speech.tell(characters.Vanessa, "Oh you bet it is! Come on I'll show you!");
-                await ƒS.Character.hide(characters.Vanessa);
-                ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
-                await ƒS.update(2);
+    //   //Link to Charactersheet
+    //   case options.Charactersheet: //need to insert Link
+    //     await ƒS.Character.hide(characters.Vanessa);
+    //     await ƒS.update(1);
+    //     await ƒS.Speech.tell(characters.gameDirector, "<i>This option will exit the city inspection. All your progress will be lost. Do you still wish to continue?</i>");
 
-                //Liquor Store
-                let optionsElement = await ƒS.Menu.getInput(options, "choices");
-                switch (optionsElement) {
-                  case options.LiquorStore:
-                    // continue path here
-                    await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.angry, ƒS.positionPercent(50, 100));
-                    await ƒS.update(.1);
-                    await ƒS.Speech.tell(characters.Vanessa, "What?! How do you....");
-                    await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.surprised, ƒS.positionPercent(50, 100));
-                    await ƒS.update(.1);
-                    await ƒS.Speech.tell(characters.Vanessa, "I mean never mind. Lower your voice if you need to talk about it and follow me inconspicuously.");
-                    ƒS.Speech.clear();
-                    ƒS.Speech.hide();
-                    await ƒS.Character.hide(characters.Vanessa);
-                    ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
-                    await ƒS.update(2);
 
-                }
 
-                ƒS.Speech.clear();
-                ƒS.Speech.hide();
-            }
-        }
-    }
+    //Choices:
+    // let options = {
+    //  Temple: "Is that a Temple of Kolia over there?",
+    // Rooftops: "I can barely see anything here. I bet the view would be better up on the Rooftops.",
+    // LiquorStore: "I've heard Kazagaard has quite the famous Liquor Store?"
+    // }
+
+
+    //Lines Vanessa
+
+    //Temple
+    // let optionsElement = await ƒS.Menu.getInput(options, "choices");
+    // switch (optionsElement) {
+    //   case options.Temple:
+    //     // continue path here
+    //     await ƒS.Speech.tell(characters.Vanessa, "You believe in gods? Sure let's take a peek in there. The light shining through the window at this time of day is great.");
+    //     await ƒS.Character.hide(characters.Vanessa);
+    //     ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
+    //     await ƒS.update(2);
+
+    //Rooftops
+    // let optionsElement = await ƒS.Menu.getInput(options, "choices");
+    // switch (optionsElement) {
+    //   case options.Rooftops:
+    //     // continue path here
+    //     await ƒS.Speech.tell(characters.Vanessa, "Oh you bet it is! Come on I'll show you!");
+    //     await ƒS.Character.hide(characters.Vanessa);
+    //     ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
+    //     await ƒS.update(2);
+
+    //     //Liquor Store
+    //     let optionsElement = await ƒS.Menu.getInput(options, "choices");
+    //     switch (optionsElement) {
+    //       case options.LiquorStore:
+    //         // continue path here
+    //         await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.angry, ƒS.positionPercent(50, 100));
+    //         await ƒS.update(.1);
+    //         await ƒS.Speech.tell(characters.Vanessa, "What?! How do you....");
+    //         await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.surprised, ƒS.positionPercent(50, 100));
+    //         await ƒS.update(.1);
+    //         await ƒS.Speech.tell(characters.Vanessa, "I mean never mind. Lower your voice if you need to talk about it and follow me inconspicuously.");
+    //         ƒS.Speech.clear();
+    //         ƒS.Speech.hide();
+    //         await ƒS.Character.hide(characters.Vanessa);
+    //         ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
+    //         await ƒS.update(2);
+
+    // }
+
+    //     ƒS.Speech.clear();
+    //     ƒS.Speech.hide();
+    // }
+    ƒS.update(1);
+
   }
 }
+// }

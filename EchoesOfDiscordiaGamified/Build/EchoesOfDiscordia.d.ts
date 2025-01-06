@@ -53,6 +53,10 @@ declare namespace EchoesOfDiscordia {
             name: string;
             background: string;
         };
+        blackout: {
+            name: string;
+            background: string;
+        };
     };
     let characters: {
         gameDirector: {
@@ -105,7 +109,18 @@ declare namespace EchoesOfDiscordia {
         };
     };
 }
-
 declare namespace EchoesOfDiscordia {
     function kazagaardCityWall(): ƒS.SceneReturn;
+}
+declare namespace EchoesOfDiscordia {
+    function kazagaardLiquorStore(): ƒS.SceneReturn;
+}
+declare namespace EchoesOfDiscordia {
+    function kazagaardRooftops(): ƒS.SceneReturn;
+}
+declare namespace EchoesOfDiscordia {
+    function kazagaardStreets(): ƒS.SceneReturn;
+}
+declare namespace EchoesOfDiscordia {
+    function kazagaardTemple(): ƒS.SceneReturn;
 }

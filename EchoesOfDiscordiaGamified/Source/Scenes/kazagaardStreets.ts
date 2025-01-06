@@ -1,5 +1,5 @@
 namespace EchoesOfDiscordia {
-    export async function kazagaardLiquorStreets(): ƒS.SceneReturn {
+    export async function kazagaardStreets(): ƒS.SceneReturn {
   
       console.log("Kazagaard Streets");
   
