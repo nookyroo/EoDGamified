@@ -33,15 +33,23 @@ declare namespace EchoesOfDiscordia {
             name: string;
             background: string;
         };
-        moonhavenLowerCity: {
+        moonhavenCityEntrance: {
             name: string;
             background: string;
         };
-        moonhavenUpperCity: {
+        moonhavenTownHall: {
             name: string;
             background: string;
         };
-        moonhavenUniversity: {
+        moonhavenTownSquare: {
+            name: string;
+            background: string;
+        };
+        moonhavenUniversityExterior: {
+            name: string;
+            background: string;
+        };
+        moonhavenUniversityInterior: {
             name: string;
             background: string;
         };

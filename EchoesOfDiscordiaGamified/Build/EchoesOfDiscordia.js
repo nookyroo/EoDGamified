@@ -42,25 +42,33 @@ var EchoesOfDiscordia;
             background: "Images/Locations/Kazagaard_ThievesGuildHideout.jpg",
         },
         //Moonhaven
-        moonhavenLowerCity: {
-            name: "Lower City",
-            background: "Images/Locations/Kazagaard_Streets.jpg",
+        moonhavenCityEntrance: {
+            name: "City Entrance",
+            background: "Images/Locations/Moonhaven_CityEntrance.jpg",
         },
-        moonhavenUpperCity: {
-            name: "Upper City",
-            background: "Images/Locations/Kazagaard_Streets.jpg",
+        moonhavenTownHall: {
+            name: "Town Hall",
+            background: "Images/Locations/Moonhaven_TownHall.jpg",
         },
-        moonhavenUniversity: {
-            name: "University",
-            background: "Images/Locations/Kazagaard_Streets.jpg",
+        moonhavenTownSquare: {
+            name: "Town Square",
+            background: "Images/Locations/Moonhaven_TownSquare.jpg",
+        },
+        moonhavenUniversityExterior: {
+            name: "University Exterior",
+            background: "Images/Locations/Moonhaven_UniversityExterior.jpg",
+        },
+        moonhavenUniversityInterior: {
+            name: "University Interior",
+            background: "Images/Locations/Moonhaven_UniversityInterior.jpg",
         },
         moonhavenTempleAndano: {
             name: "Temple of Andano",
-            background: "Images/Locations/Kazagaard_Streets.jpg",
+            background: "Images/Locations/Moonhaven_AndanoTempleAlternative1.jpg",
         },
         moonhavenTomb: {
             name: "Artefact Chamber",
-            background: "Images/Locations/Kazagaard_Streets.jpg",
+            background: "Images/Locations/Moonhaven_Tomb.jpg",
         },
         blackout: {
             name: "Blackscreen",
@@ -135,11 +143,11 @@ var EchoesOfDiscordia;
     function start(_event) {
         // Scene Hierarchy fragen
         let scenes = [
-            { scene: EchoesOfDiscordia.kazagaardCityWall, name: "Western City Gate" },
+            // { scene: kazagaardCityWall, name: "Western City Gate" },
             // { scene: kazagaardRooftops, name: "Rooftops" },
             // { scene: kazagaardLiquorStore, name: "Rooftops" },
             //{ scene: kazagaardStreets, name: "Rooftops" },
-            // { scene: kazagaardTemple, name: "Temple of Kolia" },
+            { scene: EchoesOfDiscordia.kazagaardTemple, name: "Temple of Kolia" },
         ];
         // // start the sequence
         EchoesOfDiscordia.ƒS.Progress.go(scenes);
