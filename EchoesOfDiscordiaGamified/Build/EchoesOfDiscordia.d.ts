@@ -6,11 +6,15 @@ declare namespace EchoesOfDiscordia {
         kazagaardRooftops: string;
         kazagaardTemple: string;
         kazagaardLiquorStore: string;
-        moonhavenLowerCity: string;
-        moonhavenUpperCity: string;
-        moonhavenUniversity: string;
+        moonhavenTownSquare: string;
+        moonhavenUniversityExterior: string;
+        moonhavenUniversityInterior: string;
         moonhavenTempleAndano: string;
         moonhavenTomb: string;
+        YouTubeReference: string;
+        SilverCoins: string;
+        Birds: string;
+        Ice: string;
     };
     let locations: {
         kazagaardCityWall: {

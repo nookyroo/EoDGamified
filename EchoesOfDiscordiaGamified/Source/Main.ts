@@ -9,14 +9,23 @@ namespace EchoesOfDiscordia {
     // Kazagaard
     kazagaardCity: "Audio/Stakeout (Looping)CityNoises.mp3",
     kazagaardRooftops: "Audio/Barn of Creake.mp3",
-    kazagaardTemple: "Audio/.mp3",
+    kazagaardTemple: "Audio/EoDYouAreTheLight.mp3",
     kazagaardLiquorStore: "Audio/Silk and Spice (Looping).mp3",
     //Moonhaven
-    moonhavenLowerCity: "Audio/.mp3",
-    moonhavenUpperCity: "Audio/.mp3",
-    moonhavenUniversity: "Audio/.mp3",
-    moonhavenTempleAndano: "Audio/.wav",
-    moonhavenTomb: "Audio/.mp3"
+    moonhavenTownSquare: "Audio/MoonhavenCityAmbience.mp3",
+    moonhavenUniversityExterior: "Audio/Temple of Secrets - Loop.mp3",
+    moonhavenUniversityInterior: "Audio/EoDEmptyHalls.mp3",
+    moonhavenTempleAndano: "Audio/Baldur_s_Gate_3_OST_Dark_Corners(1).wav",
+    moonhavenTomb: "Audio/EoDInTheUnderdark.mp3",
+
+    //Foreshadowing
+    YouTubeReference: "Audio/EoDYouAreTheLight.mp3",
+
+    //Items
+    SilverCoins: "Audio/276208__littlerobotsoundfactory__coins_few_40.wav",
+    Birds: "Audio/360409__nakhas__pigeons-taking-off.wav",
+    Ice: "Audio/IceSoundlooped.mp3",
+
   };
 
   //Locations
@@ -165,10 +174,10 @@ namespace EchoesOfDiscordia {
     // Scene Hierarchy fragen
     let scenes: ƒS.Scenes = [
  // { scene: kazagaardCityWall, name: "Western City Gate" },
-   // { scene: kazagaardRooftops, name: "Rooftops" },
-    // { scene: kazagaardLiquorStore, name: "Rooftops" },
+   { scene: kazagaardRooftops, name: "Rooftops" },
+    // { scene: kazagaardLiquorStore, name: "LiquorStore" },
      //{ scene: kazagaardStreets, name: "Rooftops" },
-    { scene: kazagaardTemple, name: "Temple of Kolia" },
+   // { scene: kazagaardTemple, name: "Temple of Kolia" },
 
     ];
 

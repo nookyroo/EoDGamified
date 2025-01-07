@@ -9,14 +9,20 @@ var EchoesOfDiscordia;
         // Kazagaard
         kazagaardCity: "Audio/Stakeout (Looping)CityNoises.mp3",
         kazagaardRooftops: "Audio/Barn of Creake.mp3",
-        kazagaardTemple: "Audio/.mp3",
+        kazagaardTemple: "Audio/EoDYouAreTheLight.mp3",
         kazagaardLiquorStore: "Audio/Silk and Spice (Looping).mp3",
         //Moonhaven
-        moonhavenLowerCity: "Audio/.mp3",
-        moonhavenUpperCity: "Audio/.mp3",
-        moonhavenUniversity: "Audio/.mp3",
-        moonhavenTempleAndano: "Audio/.wav",
-        moonhavenTomb: "Audio/.mp3"
+        moonhavenTownSquare: "Audio/MoonhavenCityAmbience.mp3",
+        moonhavenUniversityExterior: "Audio/Temple of Secrets - Loop.mp3",
+        moonhavenUniversityInterior: "Audio/EoDEmptyHalls.mp3",
+        moonhavenTempleAndano: "Audio/Baldur_s_Gate_3_OST_Dark_Corners(1).wav",
+        moonhavenTomb: "Audio/EoDInTheUnderdark.mp3",
+        //Foreshadowing
+        YouTubeReference: "Audio/EoDYouAreTheLight.mp3",
+        //Items
+        SilverCoins: "Audio/276208__littlerobotsoundfactory__coins_few_40.wav",
+        Birds: "Audio/360409__nakhas__pigeons-taking-off.wav",
+        Ice: "Audio/IceSoundlooped.mp3",
     };
     //Locations
     EchoesOfDiscordia.locations = {
@@ -144,10 +150,10 @@ var EchoesOfDiscordia;
         // Scene Hierarchy fragen
         let scenes = [
             // { scene: kazagaardCityWall, name: "Western City Gate" },
-            // { scene: kazagaardRooftops, name: "Rooftops" },
-            // { scene: kazagaardLiquorStore, name: "Rooftops" },
+            { scene: EchoesOfDiscordia.kazagaardRooftops, name: "Rooftops" },
+            // { scene: kazagaardLiquorStore, name: "LiquorStore" },
             //{ scene: kazagaardStreets, name: "Rooftops" },
-            { scene: EchoesOfDiscordia.kazagaardTemple, name: "Temple of Kolia" },
+            // { scene: kazagaardTemple, name: "Temple of Kolia" },
         ];
         // // start the sequence
         EchoesOfDiscordia.ƒS.Progress.go(scenes);
@@ -559,6 +565,7 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.happy, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "Isn't this a sight to behold? Also the fastest way to get around here.");
+        return "LiquorStore";
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
@@ -620,17 +627,19 @@ var EchoesOfDiscordia;
                         back: "Let's go back a few steps. I think I saw something."
                     };
                     let choice2 = await EchoesOfDiscordia.ƒS.Menu.getInput(option2, "choices");
-                    if (choice2 == option2.back)
-                        await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
-                    await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.confused, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
-                    await EchoesOfDiscordia.ƒS.update(.1);
-                    await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "Sure, if you think you did.");
-                    await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
-                    await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
-                    await EchoesOfDiscordia.ƒS.update(.1);
-                    await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>You walk towards the edge of the roof again, the ice glistening in the light sun rays.</i>");
-                    if (choice2 == option2.street)
+                    if (choice2 == option2.street) {
                         ice = false;
+                    }
+                    if (choice2 == option2.back) {
+                        await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
+                        await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.confused, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
+                        await EchoesOfDiscordia.ƒS.update(.1);
+                        await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "Sure, if you think you did.");
+                        await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
+                        await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
+                        await EchoesOfDiscordia.ƒS.update(.1);
+                        await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>You walk towards the edge of the roof again, the ice glistening in the light sun rays.</i>");
+                    }
             }
         } while (ice);
         // option where next
@@ -645,6 +654,7 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.protagonist, "Yay...");
         EchoesOfDiscordia.ƒS.Speech.clear();
         EchoesOfDiscordia.ƒS.Speech.hide();
+        EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         EchoesOfDiscordia.ƒS.Location.show(EchoesOfDiscordia.locations.blackout);
         EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardRooftops, 0, 2);
