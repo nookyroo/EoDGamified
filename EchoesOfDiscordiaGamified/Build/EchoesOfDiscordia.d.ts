@@ -12,7 +12,6 @@ declare namespace EchoesOfDiscordia {
         moonhavenTempleAndano: string;
         moonhavenTomb: string;
     };
-
     let locations: {
         kazagaardCityWall: {
             name: string;
@@ -59,7 +58,6 @@ declare namespace EchoesOfDiscordia {
             background: string;
         };
     };
-    
     let characters: {
         gameDirector: {
             name: string;
@@ -109,6 +107,18 @@ declare namespace EchoesOfDiscordia {
                 confused: string;
             };
         };
+        priest: {
+            name: string;
+        };
+        youngGirl: {
+            name: string;
+        };
+        youngBoy: {
+            name: string;
+        };
+        valrim: {
+            name: string;
+        };
     };
 }
 declare namespace EchoesOfDiscordia {
@@ -125,4 +135,7 @@ declare namespace EchoesOfDiscordia {
 }
 declare namespace EchoesOfDiscordia {
     function kazagaardTemple(): ƒS.SceneReturn;
+}
+declare namespace EchoesOfDiscordia {
+    function moonhavenTempleAndano(): ƒS.SceneReturn;
 }

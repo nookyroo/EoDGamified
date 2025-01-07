@@ -80,6 +80,25 @@ namespace EchoesOfDiscordia {
     await ƒS.Speech.tell(characters.Vanessa, "Don't ever go there! I mean it.");
     await ƒS.Speech.tell(characters.Vanessa, "It's a dangerous place, I can't loose my only... I mean best customer.");
     await ƒS.Character.hide(characters.Vanessa);
+    await ƒS.update(1);
+    await ƒS.Character.show(characters.Loraviel, characters.Loraviel.pose.idle, ƒS.positionPercent(50, 100));
+    await ƒS.update(1);
+    await ƒS.Character.hide(characters.Loraviel);
+
+    //Loraviel enter
+    await ƒS.Character.show(characters.Loraviel, characters.Loraviel.pose.happy, ƒS.positionPercent(50, 100));
+    await ƒS.update(.1);
+    await ƒS.Speech.tell(characters.Loraviel, "No, I'm searching a Paladin! Big guy, wearing chain mail. Probably with the symbol of Kolia like the one on my plate here.");
+    await ƒS.Speech.tell(characters.youngGirl, "Oh my god he's an elf!");
+    await ƒS.Speech.tell(characters.youngBoy, "And a Paladin too!!");
+    await ƒS.Speech.tell(characters.Loraviel, "Please keep your hands of my sword young one's! I'll have to keep going with my mission for now, but I promise we can play hide and seek later.");
+    await ƒS.Character.hide(characters.Loraviel);
+    await ƒS.update(1);
+
+    // Vanessa back
+    await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
+    await ƒS.update(1);
+    await ƒS.Character.hide(characters.Vanessa);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
     await ƒS.update(.1);
     await ƒS.Speech.tell(characters.Vanessa, "Anyways the guard is about to change so let's move on.");
@@ -93,11 +112,8 @@ namespace EchoesOfDiscordia {
     await ƒS.Speech.tell(characters.Vanessa, "Oh I'm Vanessa by the way. Nice to meet you pipsqueak!");
     await ƒS.Character.hide(characters.Vanessa);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
-    await ƒS.update(.1);
-
-   
-
-
+    await ƒS.update(1);
+    
     //Choice
 
     let vanessaCharactersheet = true
@@ -118,7 +134,7 @@ namespace EchoesOfDiscordia {
             yes: "Yes, take me there.",
             no: "No."
           };
-//Insert if statement for yes with link
+          //Insert if statement for yes with link
           let confirmationClick = await ƒS.Menu.getInput(confirmation, "choices");
           if (confirmationClick == confirmation.no)
             vanessaCharactersheet = false
@@ -132,21 +148,23 @@ namespace EchoesOfDiscordia {
           await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
           await ƒS.update(.1);
           vanessaCharactersheet = false
-          
+
       }
 
     } while (vanessaCharactersheet)
 
     await ƒS.Character.hide(characters.Vanessa);
-        await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
-        await ƒS.update(.1);
-        await ƒS.Speech.tell(characters.Vanessa, "ahhhh");
-        await ƒS.Character.hide(characters.Vanessa);
-        await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
-        await ƒS.update(.1);
-        await ƒS.Speech.tell(characters.protagonist, "Yay...");
+    await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
+    await ƒS.update(.1);
+  
+    ƒS.Speech.clear();
+        ƒS.Speech.hide();
+        ƒS.Character.hide(characters.Vanessa);
+        ƒS.Location.show(locations.blackout);
+        ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
+        await ƒS.update(1);
 
-   
+
 
 
 

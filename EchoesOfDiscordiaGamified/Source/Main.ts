@@ -25,7 +25,7 @@ namespace EchoesOfDiscordia {
     //Kazagaard
     kazagaardCityWall: {
       name: "Eastern City Wall",
-      background: "Images/Locations/Kazagaard_Streets.png",
+      background: "Images/Locations/Kazagaard_CityGate.jpg",
     },
     kazagaardStreets: {
       name: "City",
@@ -33,7 +33,7 @@ namespace EchoesOfDiscordia {
     },
     kazagaardRooftops: {
       name: "Rooftops",
-      background: "Images/Locations/Kazagaard_KoliaTemple.jpg",
+      background: "Images/Locations/Kazagaard_Rooftop.jpg",
     },
     kazagaardTemple: {
       name: "Temple of Kolia",
@@ -115,16 +115,32 @@ namespace EchoesOfDiscordia {
       name: "Loraviel",
       origin: ƒS.ORIGIN.BOTTOMCENTER,
       pose: {
-        idle: "Images/Characters/Amaya_neutral.png",
-        happy: "Images/Characters/Amaya_sad.png",
-        sad: "Images/Characters/Amaya_smiling.png",
-        angry: "Images/Characters/Amaya_surprised.png",
-        surprised: "Images/Characters/Amaya_thinking.png",
-        scared: "Images/Characters/Amaya_upset.png",
-        embarrassed: "Images/Characters/Amaya_upset.png",
-        confused: "Images/Characters/Amaya_upset.png"
+        idle: "Images/Characters/CaspiaIdle.png",
+        happy: "Images/Characters/CaspiaIdle.png",
+        sad: "Images/Characters/CaspiaIdle.png",
+        angry: "Images/Characters/CaspiaIdle.png",
+        surprised: "Images/Characters/CaspiaIdle.png",
+        scared: "Images/Characters/CaspiaIdle.png",
+        embarrassed: "Images/Characters/CaspiaIdle.png",
+        confused: "Images/Characters/CaspiaIdle.png"
       }
-    }
+    },
+
+    priest: {
+      name: "Priest"
+    },
+
+    youngGirl: {
+      name: "Young Girl"
+    },
+
+    youngBoy: {
+      name: "Young Boy"
+    },
+
+    valrim: {
+      name: "Valrim"
+    },
 
   }
 
@@ -134,10 +150,11 @@ namespace EchoesOfDiscordia {
 
     // Scene Hierarchy fragen
     let scenes: ƒS.Scenes = [
-    { scene: kazagaardCityWall, name: "Western City Gate" },
-    //{ scene: kazagaardRooftops, name: "Rooftops" },
-      // { scene: kazagaardLiquorStore, name: "Rooftops" },
-      // { scene: kazagaardStreets, name: "Rooftops" },
+ { scene: kazagaardCityWall, name: "Western City Gate" },
+    // { scene: kazagaardRooftops, name: "Rooftops" },
+    // { scene: kazagaardLiquorStore, name: "Rooftops" },
+     //{ scene: kazagaardStreets, name: "Rooftops" },
+     // { scene: kazagaardTemple, name: "Temple of Kolia" },
 
     ];
 

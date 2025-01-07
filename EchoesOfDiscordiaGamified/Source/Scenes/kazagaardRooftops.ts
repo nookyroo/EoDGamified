@@ -9,7 +9,7 @@ namespace EchoesOfDiscordia {
         ƒS.Speech.hide();
 
         await ƒS.Location.show(locations.kazagaardRooftops);
-        ƒS.Sound.play(sound.kazagaardCity, .5, true);
+        ƒS.Sound.play(sound.kazagaardRooftops, .5, true);
         await ƒS.update(2);
         ƒS.Speech.show();
         await ƒS.update(1);
@@ -79,10 +79,22 @@ namespace EchoesOfDiscordia {
                     await ƒS.update(.1);
 
                     let option2 = {
-                        street: "go down again first",
-                        back: "go back a few steps. I think I saw something."
+                        street: "Let's go down again first",
+                        back: "Let's go back a few steps. I think I saw something."
                     };
+
                     let choice2 = await ƒS.Menu.getInput(option2, "choices");
+
+                    if (choice2 == option2.back)
+                    await ƒS.Character.hide(characters.Vanessa);
+                    await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.confused, ƒS.positionPercent(50, 100));
+                    await ƒS.update(.1);
+                    await ƒS.Speech.tell(characters.Vanessa, "Sure, if you think you did.");
+                    await ƒS.Character.hide(characters.Vanessa);
+                    await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
+                    await ƒS.update(.1);
+                    await ƒS.Speech.tell(characters.gameDirector, "<i>You walk towards the edge of the roof again, the ice glistening in the light sun rays.</i>");
+
                     if (choice2 == option2.street)
                         ice = false
             }
@@ -99,7 +111,12 @@ namespace EchoesOfDiscordia {
         await ƒS.update(.1);
         await ƒS.Speech.tell(characters.protagonist, "Yay...");
 
-
+        ƒS.Speech.clear();
+        ƒS.Speech.hide();
+        ƒS.Character.hide(characters.Vanessa);
+        ƒS.Location.show(locations.blackout);
+        ƒS.Sound.fade(sound.kazagaardRooftops, 0, 2)
+        await ƒS.update(1);
 
         // Back to the ice
         // await ƒS.Speech.tell(characters.gameDirector, "<i>You walk towards the edge of the roof again, the ice glistening in the light sun rays.</i>");
