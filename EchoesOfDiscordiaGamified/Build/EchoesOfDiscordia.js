@@ -149,11 +149,11 @@ var EchoesOfDiscordia;
     function start(_event) {
         // Scene Hierarchy fragen
         let scenes = [
-            // { scene: kazagaardCityWall, name: "Western City Gate" },
-            { scene: EchoesOfDiscordia.kazagaardRooftops, name: "Rooftops" },
-            // { scene: kazagaardLiquorStore, name: "LiquorStore" },
-            //{ scene: kazagaardStreets, name: "Rooftops" },
-            // { scene: kazagaardTemple, name: "Temple of Kolia" },
+            { scene: EchoesOfDiscordia.kazagaardCityWall, name: "Western City Gate" },
+            { id: "kazagaardRooftops", scene: EchoesOfDiscordia.kazagaardRooftops, name: "Rooftops" },
+            { id: "kazagaardLiquorStore", scene: EchoesOfDiscordia.kazagaardLiquorStore, name: "LiquorStore" },
+            { id: "kazagaardStreets", scene: EchoesOfDiscordia.kazagaardStreets, name: "Rooftops" },
+            { id: "kazagaardTemple", scene: EchoesOfDiscordia.kazagaardTemple, name: "Temple of Kolia" },
         ];
         // // start the sequence
         EchoesOfDiscordia.ƒS.Progress.go(scenes);
@@ -197,7 +197,9 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
+        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.SilverCoins, 3, false);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.protagonist, "(Gives her 5 silver)");
+        EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.SilverCoins, 0, 1);
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.confused, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
@@ -311,8 +313,8 @@ var EchoesOfDiscordia;
         EchoesOfDiscordia.ƒS.Speech.hide();
         EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         EchoesOfDiscordia.ƒS.Location.show(EchoesOfDiscordia.locations.blackout);
-        EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardCity, 0, 2);
         await EchoesOfDiscordia.ƒS.update(1);
+        return "kazagaardStreets";
         // let optionsElement = await ƒS.Menu.getInput(options, "choices");
         // switch (optionsElement) {
         //   case options.continue:
@@ -565,12 +567,13 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.happy, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "Isn't this a sight to behold? Also the fastest way to get around here.");
-        return "LiquorStore";
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>In front of you, the bustling streets resemble ants mingling through the dirt. Even at this height, buildings stack atop one another, connected only by small planks and ropes.</i>");
+        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.Birds, .5, false);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>Birds scatter as you reach the top of yet another ladder, leading even higher. From this vantage point, the Ashland Mountains in the distance cast a foreboding shadow over Kazagaard.</i>");
+        EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.Birds, 0, 1);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>The mountain tops' white mantles contrast sharply with the grey, foggy city below, and for once, the air feels clean and refreshing. </i>");
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.protagonist, "Wow it looks...");
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>As your focus shifts back to the labyrinth of streets below, you see people sprinting, others vandalizing walls, pigs and rats running freely, and pickpockets fleeing from their screeching victims, who coincidentally seem to carry knives.</i>");
@@ -590,6 +593,9 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
+        EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardRooftops, 0, 2);
+        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.YouTubeReference, .5, true);
+        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.Ice, .5, true);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>A sudden movement catches your eye, something tall and dark disappearing behind a corner before you can make out what it is. </i>");
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>Your gaze shifts to the narrow gap beside the corner, where the edge of the roof glistens with ice. A grappling hook clings to one of the ledges, its rope dangling down the side of the roof.</i>");
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>Frost coats its lower section, where a seemingly once-wet substance appears to have frozen. The rope’s deep, saturated red stands out starkly against the icy backdrop.</i>");
@@ -615,6 +621,9 @@ var EchoesOfDiscordia;
                     await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>Please choose the second option to continue.</i>");
                     break;
                 default:
+                    EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.YouTubeReference, 0, 1);
+                    EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.Ice, 0, 1);
+                    EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.kazagaardRooftops, .5, true);
                     await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
                     await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.happy, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
                     await EchoesOfDiscordia.ƒS.update(.1);
@@ -635,6 +644,9 @@ var EchoesOfDiscordia;
                         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.confused, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
                         await EchoesOfDiscordia.ƒS.update(.1);
                         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "Sure, if you think you did.");
+                        EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardRooftops, 0, 2);
+                        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.YouTubeReference, .5, true);
+                        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.Ice, .5, true);
                         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
                         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
                         await EchoesOfDiscordia.ƒS.update(.1);
@@ -659,6 +671,7 @@ var EchoesOfDiscordia;
         EchoesOfDiscordia.ƒS.Location.show(EchoesOfDiscordia.locations.blackout);
         EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardRooftops, 0, 2);
         await EchoesOfDiscordia.ƒS.update(1);
+        return "kazagaardStreets";
         // Back to the ice
         // await ƒS.Speech.tell(characters.gameDirector, "<i>You walk towards the edge of the roof again, the ice glistening in the light sun rays.</i>");
     }
@@ -720,7 +733,7 @@ var EchoesOfDiscordia;
                 EchoesOfDiscordia.ƒS.Speech.hide();
                 EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
                 EchoesOfDiscordia.ƒS.Location.show(EchoesOfDiscordia.locations.blackout);
-                EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardRooftops, 0, 2);
+                EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardCity, 0, 2);
                 await EchoesOfDiscordia.ƒS.update(1);
                 return "kazagaardTemple";
             case destination.rooftops:
@@ -736,7 +749,7 @@ var EchoesOfDiscordia;
                 EchoesOfDiscordia.ƒS.Speech.hide();
                 EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
                 EchoesOfDiscordia.ƒS.Location.show(EchoesOfDiscordia.locations.blackout);
-                EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardRooftops, 0, 2);
+                EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardCity, 0, 2);
                 await EchoesOfDiscordia.ƒS.update(1);
                 return "kazagaardRooftops";
             case destination.liquorStore:
@@ -759,7 +772,7 @@ var EchoesOfDiscordia;
                 EchoesOfDiscordia.ƒS.Speech.hide();
                 EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
                 EchoesOfDiscordia.ƒS.Location.show(EchoesOfDiscordia.locations.blackout);
-                EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardRooftops, 0, 2);
+                EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardCity, 0, 2);
                 await EchoesOfDiscordia.ƒS.update(1);
                 return "kazagaardLiquorStore";
         }
@@ -818,7 +831,7 @@ var EchoesOfDiscordia;
         do {
             let option1 = {
                 evesdrop: "What do you think those two are talking about? Let's evesdrop.",
-                leave: "Ignore the situation and follow"
+                leave: "Back to the main road then."
             };
             let choice = await EchoesOfDiscordia.ƒS.Menu.getInput(option1, "choices");
             switch (choice) {
@@ -907,6 +920,7 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Location.show(EchoesOfDiscordia.locations.blackout);
         EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardTemple, 0, 2);
         await EchoesOfDiscordia.ƒS.update(1);
+        return "kazagaardStreets";
         // Back to the ice
         //await ƒS.Speech.tell(characters.gameDirector, "<i>You walk towards the edge of the roof again, the ice glistening in the light sun rays.</i>");
     }

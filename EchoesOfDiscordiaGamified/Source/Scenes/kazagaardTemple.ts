@@ -42,7 +42,7 @@ namespace EchoesOfDiscordia {
     do {
       let option1 = {
         evesdrop: "What do you think those two are talking about? Let's evesdrop.",
-        leave: "Ignore the situation and follow"
+        leave: "Back to the main road then."
       };
 
       let choice = await ƒS.Menu.getInput(option1, "choices");
@@ -135,7 +135,7 @@ namespace EchoesOfDiscordia {
     await ƒS.Location.show(locations.blackout);
     ƒS.Sound.fade(sound.kazagaardTemple, 0, 2);
     await ƒS.update(1);
-
+return "kazagaardStreets"
 
 
 

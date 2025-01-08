@@ -36,7 +36,9 @@ namespace EchoesOfDiscordia {
     await ƒS.Character.hide(characters.Vanessa);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
     await ƒS.update(.1);
+    ƒS.Sound.play(sound.SilverCoins, 3, false);
     await ƒS.Speech.tell(characters.protagonist, "(Gives her 5 silver)");
+    ƒS.Sound.fade(sound.SilverCoins, 0, 1);
     await ƒS.Character.hide(characters.Vanessa);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.confused, ƒS.positionPercent(50, 100));
     await ƒS.update(.1);
@@ -161,10 +163,9 @@ namespace EchoesOfDiscordia {
         ƒS.Speech.hide();
         ƒS.Character.hide(characters.Vanessa);
         ƒS.Location.show(locations.blackout);
-        ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
         await ƒS.update(1);
 
-
+        return "kazagaardStreets";
 
 
 

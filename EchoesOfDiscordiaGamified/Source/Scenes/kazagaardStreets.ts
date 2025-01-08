@@ -58,7 +58,7 @@ namespace EchoesOfDiscordia {
         ƒS.Speech.hide();
         ƒS.Character.hide(characters.Vanessa);
         ƒS.Location.show(locations.blackout);
-        ƒS.Sound.fade(sound.kazagaardRooftops, 0, 2)
+        ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
         await ƒS.update(1);
         return "kazagaardTemple";
 
@@ -75,7 +75,7 @@ namespace EchoesOfDiscordia {
         ƒS.Speech.hide();
         ƒS.Character.hide(characters.Vanessa);
         ƒS.Location.show(locations.blackout);
-        ƒS.Sound.fade(sound.kazagaardRooftops, 0, 2)
+        ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
         await ƒS.update(1);
         return "kazagaardRooftops";
 
@@ -99,7 +99,7 @@ namespace EchoesOfDiscordia {
         ƒS.Speech.hide();
         ƒS.Character.hide(characters.Vanessa);
         ƒS.Location.show(locations.blackout);
-        ƒS.Sound.fade(sound.kazagaardRooftops, 0, 2)
+        ƒS.Sound.fade(sound.kazagaardCity, 0, 2)
         await ƒS.update(1);
         return "kazagaardLiquorStore";
     };
