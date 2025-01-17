@@ -53,7 +53,11 @@ namespace EchoesOfDiscordia {
     await ƒS.update(.1);
 
     //Cedrics office
+    ƒS.Sound.fade(sound.kazagaardLiquorStore, 0, 2)
+    ƒS.Sound.play(sound.YouTubeReference, .5, true);
+    ƒS.Sound.play(sound.Door, 4, false);
     await ƒS.Speech.tell(characters.gameDirector, "<i>You walk over to the office door and try to push it open.</i>");
+    //ƒS.Sound.fade(sound.Door, 0, 2)
     await ƒS.Speech.tell(characters.gameDirector, "<i>It doesn't budge.</i>");
     await ƒS.Character.hide(characters.Vanessa);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.surprised, ƒS.positionPercent(50, 100));
@@ -68,6 +72,8 @@ namespace EchoesOfDiscordia {
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
     await ƒS.update(.1);
     await ƒS.Speech.tell(characters.Vanessa, "Well he's a busy man. Oh how about we check out the Questboard.");
+    ƒS.Sound.fade(sound.YouTubeReference, 0, 2)
+    ƒS.Sound.play(sound.kazagaardLiquorStore, .5, true);
     await ƒS.Character.hide(characters.Vanessa);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
     await ƒS.update(.1);
@@ -90,7 +96,7 @@ namespace EchoesOfDiscordia {
     await ƒS.Character.hide(characters.Vanessa);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
     await ƒS.update(.1);
-  
+
 
     //option what to do
 
@@ -125,7 +131,11 @@ namespace EchoesOfDiscordia {
           break;
 
         case option1.cedricsOffice:
+          ƒS.Sound.fade(sound.kazagaardLiquorStore, 0, 2)
+          ƒS.Sound.play(sound.YouTubeReference, .5, true);
+          ƒS.Sound.play(sound.Door, 4, false);
           await ƒS.Speech.tell(characters.gameDirector, "<i>You walk over to the office door and try to push it open.</i>");
+          //ƒS.Sound.fade(sound.Door, 0, 2)
           await ƒS.Speech.tell(characters.gameDirector, "<i>It doesn't budge.</i>");
           await ƒS.Character.hide(characters.Vanessa);
           await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.surprised, ƒS.positionPercent(50, 100));
@@ -143,12 +153,14 @@ namespace EchoesOfDiscordia {
           let choice2 = await ƒS.Menu.getInput(option2, "choices");
 
           if (choice2 == option2.open)
-          await ƒS.Speech.tell(characters.gameDirector, "<i>This option would open a Tab with the YouTube episode. For this testing it is not available. The second option will be selected.</i>");
-          
+            await ƒS.Speech.tell(characters.gameDirector, "<i>This option would open a Tab with the YouTube episode. For this testing it is not available. The second option will be selected.</i>");
+
           if (choice2 == option2.back)
             await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.happy, ƒS.positionPercent(50, 100));
           await ƒS.update(.1);
           await ƒS.Speech.tell(characters.Vanessa, "Well he's a busy man. Oh how about we check out the Questboard.");
+          ƒS.Sound.fade(sound.YouTubeReference, 0, 2)
+          ƒS.Sound.play(sound.kazagaardLiquorStore, .5, true);
           await ƒS.Character.hide(characters.Vanessa);
           await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
           await ƒS.update(.1);
@@ -172,6 +184,7 @@ namespace EchoesOfDiscordia {
 
     ƒS.Speech.clear();
     ƒS.Speech.hide();
+    ƒS.Character.hide(characters.Vanessa);
     ƒS.Character.hide(characters.Vanessa);
     ƒS.Location.show(locations.blackout);
     ƒS.Sound.fade(sound.kazagaardLiquorStore, 0, 2)

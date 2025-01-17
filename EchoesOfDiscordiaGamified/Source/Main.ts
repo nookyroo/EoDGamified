@@ -25,6 +25,7 @@ namespace EchoesOfDiscordia {
     SilverCoins: "Audio/276208__littlerobotsoundfactory__coins_few_40.wav",
     Birds: "Audio/360409__nakhas__pigeons-taking-off.wav",
     Ice: "Audio/IceSoundlooped.mp3",
+    Door: "Audio/444704__shelbyshark__rattlinglockeddoor.mp3"
 
   };
 
@@ -42,7 +43,7 @@ namespace EchoesOfDiscordia {
     },
     kazagaardRooftops: {
       name: "Rooftops",
-      background: "Images/Locations/Kazagaard_Rooftop.jpg",
+      background: "Images/Locations/Kazagaard_CityRooftops.png",
     },
     kazagaardTemple: {
       name: "Temple of Kolia",
@@ -138,8 +139,8 @@ namespace EchoesOfDiscordia {
       name: "Loraviel",
       origin: ƒS.ORIGIN.BOTTOMCENTER,
       pose: {
-        idle: "Images/Characters/CaspiaIdle.png",
-        happy: "Images/Characters/CaspiaIdle.png",
+        idle: "Images/Characters/LoravielIdle.png",
+        happy: "Images/Characters/LoravielHappy.png",
         sad: "Images/Characters/CaspiaIdle.png",
         angry: "Images/Characters/CaspiaIdle.png",
         surprised: "Images/Characters/CaspiaIdle.png",

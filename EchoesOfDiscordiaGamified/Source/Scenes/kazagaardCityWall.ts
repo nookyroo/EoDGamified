@@ -14,9 +14,7 @@ namespace EchoesOfDiscordia {
     ƒS.Speech.show();
     await ƒS.update(1);
     await ƒS.Speech.tell(characters.gameDirector, "<i>Kazagaard. A city known for its prison and the mines, in which the criminals held there must work under harsh conditions.</i>");
-    ƒS.Sound.play(sound.kazagaardRooftops, 5, false);
     await ƒS.Speech.tell(characters.gameDirector, "<i>As you pass the City Gate a labyrinth of dark narrow alleys opens in front of you, giving the whole city a sinister and foreboding look.</i>");
-    ƒS.Sound.fade(sound.kazagaardRooftops, 0, 1);
     await ƒS.update(.1);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
     await ƒS.update(1);
@@ -83,6 +81,7 @@ namespace EchoesOfDiscordia {
     await ƒS.Speech.tell(characters.Vanessa, "It's a dangerous place, I can't loose my only... I mean best customer.");
     await ƒS.Character.hide(characters.Vanessa);
     await ƒS.update(1);
+    console.log("here");
     await ƒS.Character.show(characters.Loraviel, characters.Loraviel.pose.idle, ƒS.positionPercent(50, 100));
     await ƒS.update(1);
     await ƒS.Character.hide(characters.Loraviel);
@@ -91,8 +90,14 @@ namespace EchoesOfDiscordia {
     await ƒS.Character.show(characters.Loraviel, characters.Loraviel.pose.happy, ƒS.positionPercent(50, 100));
     await ƒS.update(.1);
     await ƒS.Speech.tell(characters.Loraviel, "No, I'm searching a Paladin! Big guy, wearing chain mail. Probably with the symbol of Kolia like the one on my plate here.");
+    await ƒS.Character.hide(characters.Loraviel);
+    await ƒS.Character.show(characters.Loraviel, characters.Loraviel.pose.idle, ƒS.positionPercent(50, 100));
+    await ƒS.update(.1);
     await ƒS.Speech.tell(characters.youngGirl, "Oh my god he's an elf!");
     await ƒS.Speech.tell(characters.youngBoy, "And a Paladin too!!");
+    await ƒS.Character.hide(characters.Loraviel);
+    await ƒS.Character.show(characters.Loraviel, characters.Loraviel.pose.happy, ƒS.positionPercent(50, 100));
+    await ƒS.update(.1);
     await ƒS.Speech.tell(characters.Loraviel, "Please keep your hands of my sword young one's! I'll have to keep going with my mission for now, but I promise we can play hide and seek later.");
     await ƒS.Character.hide(characters.Loraviel);
     await ƒS.update(1);
@@ -115,7 +120,7 @@ namespace EchoesOfDiscordia {
     await ƒS.Character.hide(characters.Vanessa);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
     await ƒS.update(1);
-    
+
     //Choice
 
     let vanessaCharactersheet = true
@@ -158,14 +163,14 @@ namespace EchoesOfDiscordia {
     await ƒS.Character.hide(characters.Vanessa);
     await ƒS.Character.show(characters.Vanessa, characters.Vanessa.pose.idle, ƒS.positionPercent(50, 100));
     await ƒS.update(.1);
-  
-    ƒS.Speech.clear();
-        ƒS.Speech.hide();
-        ƒS.Character.hide(characters.Vanessa);
-        ƒS.Location.show(locations.blackout);
-        await ƒS.update(1);
 
-        return "kazagaardStreets";
+    ƒS.Speech.clear();
+    ƒS.Speech.hide();
+    ƒS.Character.hide(characters.Vanessa);
+    ƒS.Location.show(locations.blackout);
+    await ƒS.update(1);
+
+    return "kazagaardStreets";
 
 
 

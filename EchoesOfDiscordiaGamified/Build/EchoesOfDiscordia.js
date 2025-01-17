@@ -23,6 +23,7 @@ var EchoesOfDiscordia;
         SilverCoins: "Audio/276208__littlerobotsoundfactory__coins_few_40.wav",
         Birds: "Audio/360409__nakhas__pigeons-taking-off.wav",
         Ice: "Audio/IceSoundlooped.mp3",
+        Door: "Audio/444704__shelbyshark__rattlinglockeddoor.mp3"
     };
     //Locations
     EchoesOfDiscordia.locations = {
@@ -37,7 +38,7 @@ var EchoesOfDiscordia;
         },
         kazagaardRooftops: {
             name: "Rooftops",
-            background: "Images/Locations/Kazagaard_Rooftop.jpg",
+            background: "Images/Locations/Kazagaard_CityRooftops.png",
         },
         kazagaardTemple: {
             name: "Temple of Kolia",
@@ -121,8 +122,8 @@ var EchoesOfDiscordia;
             name: "Loraviel",
             origin: EchoesOfDiscordia.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
-                idle: "Images/Characters/CaspiaIdle.png",
-                happy: "Images/Characters/CaspiaIdle.png",
+                idle: "Images/Characters/LoravielIdle.png",
+                happy: "Images/Characters/LoravielHappy.png",
                 sad: "Images/Characters/CaspiaIdle.png",
                 angry: "Images/Characters/CaspiaIdle.png",
                 surprised: "Images/Characters/CaspiaIdle.png",
@@ -175,9 +176,7 @@ var EchoesOfDiscordia;
         EchoesOfDiscordia.ƒS.Speech.show();
         await EchoesOfDiscordia.ƒS.update(1);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>Kazagaard. A city known for its prison and the mines, in which the criminals held there must work under harsh conditions.</i>");
-        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.kazagaardRooftops, 5, false);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>As you pass the City Gate a labyrinth of dark narrow alleys opens in front of you, giving the whole city a sinister and foreboding look.</i>");
-        EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardRooftops, 0, 1);
         await EchoesOfDiscordia.ƒS.update(.1);
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(1);
@@ -244,6 +243,7 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "It's a dangerous place, I can't loose my only... I mean best customer.");
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         await EchoesOfDiscordia.ƒS.update(1);
+        console.log("here");
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Loraviel, EchoesOfDiscordia.characters.Loraviel.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(1);
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Loraviel);
@@ -251,8 +251,14 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Loraviel, EchoesOfDiscordia.characters.Loraviel.pose.happy, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Loraviel, "No, I'm searching a Paladin! Big guy, wearing chain mail. Probably with the symbol of Kolia like the one on my plate here.");
+        await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Loraviel);
+        await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Loraviel, EchoesOfDiscordia.characters.Loraviel.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
+        await EchoesOfDiscordia.ƒS.update(.1);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.youngGirl, "Oh my god he's an elf!");
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.youngBoy, "And a Paladin too!!");
+        await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Loraviel);
+        await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Loraviel, EchoesOfDiscordia.characters.Loraviel.pose.happy, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
+        await EchoesOfDiscordia.ƒS.update(.1);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Loraviel, "Please keep your hands of my sword young one's! I'll have to keep going with my mission for now, but I promise we can play hide and seek later.");
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Loraviel);
         await EchoesOfDiscordia.ƒS.update(1);
@@ -437,7 +443,11 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
         //Cedrics office
+        EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardLiquorStore, 0, 2);
+        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.YouTubeReference, .5, true);
+        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.Door, 4, false);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>You walk over to the office door and try to push it open.</i>");
+        //ƒS.Sound.fade(sound.Door, 0, 2)
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>It doesn't budge.</i>");
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.surprised, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
@@ -451,6 +461,8 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.happy, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
         await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "Well he's a busy man. Oh how about we check out the Questboard.");
+        EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.YouTubeReference, 0, 2);
+        EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.kazagaardLiquorStore, .5, true);
         await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
         await EchoesOfDiscordia.ƒS.update(.1);
@@ -502,7 +514,11 @@ var EchoesOfDiscordia;
                     await EchoesOfDiscordia.ƒS.update(.1);
                     break;
                 case option1.cedricsOffice:
+                    EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardLiquorStore, 0, 2);
+                    EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.YouTubeReference, .5, true);
+                    EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.Door, 4, false);
                     await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>You walk over to the office door and try to push it open.</i>");
+                    //ƒS.Sound.fade(sound.Door, 0, 2)
                     await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.gameDirector, "<i>It doesn't budge.</i>");
                     await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
                     await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.surprised, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
@@ -522,6 +538,8 @@ var EchoesOfDiscordia;
                         await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.happy, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
                     await EchoesOfDiscordia.ƒS.update(.1);
                     await EchoesOfDiscordia.ƒS.Speech.tell(EchoesOfDiscordia.characters.Vanessa, "Well he's a busy man. Oh how about we check out the Questboard.");
+                    EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.YouTubeReference, 0, 2);
+                    EchoesOfDiscordia.ƒS.Sound.play(EchoesOfDiscordia.sound.kazagaardLiquorStore, .5, true);
                     await EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
                     await EchoesOfDiscordia.ƒS.Character.show(EchoesOfDiscordia.characters.Vanessa, EchoesOfDiscordia.characters.Vanessa.pose.idle, EchoesOfDiscordia.ƒS.positionPercent(50, 100));
                     await EchoesOfDiscordia.ƒS.update(.1);
@@ -541,6 +559,7 @@ var EchoesOfDiscordia;
         await EchoesOfDiscordia.ƒS.update(.1);
         EchoesOfDiscordia.ƒS.Speech.clear();
         EchoesOfDiscordia.ƒS.Speech.hide();
+        EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         EchoesOfDiscordia.ƒS.Character.hide(EchoesOfDiscordia.characters.Vanessa);
         EchoesOfDiscordia.ƒS.Location.show(EchoesOfDiscordia.locations.blackout);
         EchoesOfDiscordia.ƒS.Sound.fade(EchoesOfDiscordia.sound.kazagaardLiquorStore, 0, 2);

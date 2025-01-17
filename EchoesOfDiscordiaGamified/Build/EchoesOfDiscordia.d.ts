@@ -15,6 +15,7 @@ declare namespace EchoesOfDiscordia {
         SilverCoins: string;
         Birds: string;
         Ice: string;
+        Door: string;
     };
     let locations: {
         kazagaardCityWall: {
