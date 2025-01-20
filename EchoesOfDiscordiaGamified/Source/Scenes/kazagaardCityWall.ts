@@ -134,8 +134,8 @@ namespace EchoesOfDiscordia {
       switch (choiceToOpen) {
         //scene continues here then
         case openVanessaCharactersheet.infos:
-          await ƒS.Speech.tell(characters.gameDirector, "<i>This option will end the city investigation and your progress will be lost.</i>");
-          await ƒS.Speech.tell(characters.gameDirector, "<i>Do you still want to leave?</i>");
+          await ƒS.Speech.tell(characters.gameDirector, "<i>This option would end the city investigationand is not available during this testing.</i>");
+          await ƒS.Speech.tell(characters.gameDirector, "<i>You will continue with the second option now.</i>");
 
           let confirmation = {
             yes: "Yes, take me there.",
