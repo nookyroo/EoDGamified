@@ -1,0 +1,4345 @@
+meta:
+  owner: ''
+  name: Echoes of Discordia - Thesisprojekt
+  system: dnd5e
+  markdown_templates: []
+  markdown_snippets: []
+  columns:
+  - id: qlyeerbjqx
+    enabled: true
+    name: Locations
+    base_type: LOCATION
+    order: 1
+    statblock: false
+    consumables: true
+    default_mdt: 
+    types:
+    - id: world
+      name: World / Plane
+      icon: world
+      order: 0
+      initial: false
+    - id: landmass
+      name: Country / Landmass
+      icon: landmass
+      order: 1
+      initial: false
+    - id: region
+      name: Region
+      icon: region
+      order: 2
+      initial: false
+    - id: town
+      name: Settlement
+      icon: town
+      order: 3
+      initial: false
+    - id: building
+      name: Building
+      icon: building
+      order: 4
+      initial: false
+    - id: fort
+      name: Castle / Fort
+      icon: fort
+      order: 5
+      initial: false
+    - id: route
+      name: Route / Road
+      icon: route
+      order: 6
+      initial: false
+    - id: water
+      name: Body of Water
+      icon: water
+      order: 7
+      initial: false
+    - id: landmark
+      name: Landmark
+      icon: landmark
+      order: 8
+      initial: false
+    - id: dungeon
+      name: Dungeon
+      icon: dungeon
+      order: 9
+      initial: false
+    - id: location
+      name: Other
+      icon: location
+      order: 10
+      initial: true
+    - id: information
+      name: Information
+      icon: information
+      order: 11
+      initial: false
+    - id: scene
+      name: Scene / Encounter
+      icon: scene
+      order: 12
+      initial: false
+    statuses:
+    - id: 0
+      name: Not Yet Encountered
+    - id: 1
+      name: Encountered
+    - id: 2
+      name: Destroyed
+    - id: 3
+      name: No Longer Relevant
+    default_status: 1
+  - id: ulryefksuf
+    enabled: true
+    name: Organisations
+    base_type: ORGANISATION
+    order: 2
+    statblock: false
+    consumables: true
+    default_mdt: 
+    types:
+    - id: government
+      name: Government
+      icon: government
+      order: 0
+      initial: false
+    - id: faith
+      name: Faith
+      icon: faith
+      order: 1
+      initial: false
+    - id: education
+      name: Education
+      icon: education
+      order: 2
+      initial: false
+    - id: military
+      name: Military
+      icon: military
+      order: 3
+      initial: false
+    - id: mercenary
+      name: Mercenary
+      icon: mercenary
+      order: 4
+      initial: false
+    - id: criminal
+      name: Criminal
+      icon: criminal
+      order: 5
+      initial: false
+    - id: artisan
+      name: Artisan
+      icon: artisan
+      order: 6
+      initial: false
+    - id: society
+      name: Society / Culture
+      icon: society
+      order: 7
+      initial: false
+    - id: orgs
+      name: Other
+      icon: orgs
+      order: 8
+      initial: true
+    - id: information
+      name: Information
+      icon: information
+      order: 9
+      initial: false
+    statuses:
+    - id: 0
+      name: Hidden
+    - id: 1
+      name: Known
+    - id: 2
+      name: Disbanded
+    - id: 3
+      name: No Longer Relevant
+    default_status: 0
+  - id: upfwepumnw
+    enabled: true
+    name: Creatures
+    base_type: CREATURE
+    order: 3
+    statblock: true
+    consumables: true
+    default_mdt: 
+    types:
+    - id: pc
+      name: Player Character
+      icon: pc
+      order: 0
+      initial: false
+    - id: friend
+      name: Friendly NPC
+      icon: friend
+      order: 1
+      initial: false
+    - id: neutral
+      name: Neutral NPC
+      icon: neutral
+      order: 2
+      initial: false
+    - id: hostile
+      name: Hostile NPC
+      icon: hostile
+      order: 3
+      initial: false
+    - id: beast
+      name: Beast
+      icon: beast
+      order: 4
+      initial: false
+    - id: npc
+      name: Other
+      icon: npc
+      order: 5
+      initial: true
+    - id: information
+      name: Information
+      icon: information
+      order: 6
+      initial: false
+    statuses:
+    - id: 0
+      name: Not Yet Encountered
+    - id: 1
+      name: Encountered
+    - id: 2
+      name: Dead
+    - id: 3
+      name: No Longer Relevant
+    default_status: 0
+  - id: hnkokhujew
+    enabled: true
+    name: Quests
+    base_type: QUEST
+    order: 4
+    statblock: false
+    consumables: true
+    default_mdt: 
+    types:
+    - id: primaryquest
+      name: Primary Quest
+      icon: primaryquest
+      order: 0
+      initial: true
+    - id: sidequest
+      name: Side Quest
+      icon: sidequest
+      order: 1
+      initial: false
+    - id: task
+      name: Task
+      icon: task
+      order: 2
+      initial: false
+    - id: information
+      name: Information
+      icon: information
+      order: 3
+      initial: false
+    - id: storyevent
+      name: Story Event
+      icon: storyevent
+      order: 4
+      initial: false
+    - id: scene
+      name: Scene
+      icon: scene
+      order: 5
+      initial: false
+    statuses:
+    - id: 0
+      name: Not Yet Encountered
+    - id: 1
+      name: Active
+    - id: 2
+      name: Completed
+    - id: 3
+      name: No Longer Relevant
+    default_status: 0
+  - id: gfxlflwybm
+    enabled: true
+    name: Things
+    base_type: THING
+    order: 5
+    statblock: false
+    consumables: true
+    default_mdt: 
+    types:
+    - id: information
+      name: Information
+      icon: information
+      order: 0
+      initial: true
+    - id: storyevent
+      name: Story Event
+      icon: storyevent
+      order: 1
+      initial: false
+    - id: scene
+      name: Scene
+      icon: scene
+      order: 2
+      initial: false
+    - id: quote
+      name: Dialogue / Quote
+      icon: quote
+      order: 3
+      initial: false
+    - id: document
+      name: Document / Book
+      icon: document
+      order: 4
+      initial: false
+    - id: item
+      name: Item
+      icon: item
+      order: 5
+      initial: false
+    - id: treasure
+      name: Treasure
+      icon: treasure
+      order: 6
+      initial: false
+    - id: tool
+      name: Tool
+      icon: tool
+      order: 7
+      initial: false
+    - id: weapon
+      name: Weapon
+      icon: weapon
+      order: 8
+      initial: false
+    - id: armour
+      name: Armour
+      icon: armour-1
+      order: 9
+      initial: false
+    - id: clothing
+      name: Clothing
+      icon: clothing
+      order: 10
+      initial: false
+    - id: spell
+      name: Spell
+      icon: spell
+      order: 11
+      initial: false
+    - id: potion
+      name: Potion
+      icon: potion
+      order: 12
+      initial: false
+    - id: silverware
+      name: Food / Drink
+      icon: silverware
+      order: 13
+      initial: false
+    - id: vehicle
+      name: Vehicle
+      icon: vehicle
+      order: 14
+      initial: false
+    - id: game
+      name: Game / Mechanic
+      icon: game
+      order: 15
+      initial: false
+    statuses:
+    - id: 0
+      name: Not Yet Encountered
+    - id: 1
+      name: Encountered
+    - id: 2
+      name: Ended
+    - id: 3
+      name: No Longer Relevant
+    default_status: 0
+  custom_css: []
+  use_custom_css: false
+  sharing:
+    owner: 
+    lease: ''
+    read_only:
+      shared: false
+      shared_default: true
+      shared_default_as_parent: false
+    roles: []
+connections: []
+notes: []
+timeline:
+- id: zyapjpemyy
+  name: Character
+  blurb: >-
+    # $[objectname]
+
+
+    This section contains ideas for comprehensive profiles of the characters in Echoes of Discordia.
+
+
+    ## brainstorming
+
+    - actual charactersheets?
+
+    - downloadable charactersheet
+
+    - qna with the character?
+
+    - reviews of the others
+
+    - little eastereggs in background
+  order: 1
+  notes: []
+  start_date: 0001-01-01T00:00:00.0000000
+  end_date: 0001-01-01T00:00:00.0000000
+  shared: true
+- id: tnjnmuwest
+  name: Visual Novel
+  blurb: >-
+    # $[objectname]
+
+
+    This page provides an overview of the created Visual Novel, a narrative-driven experience where the player gets to explore the World of Nexor. Here, you will find details on the locations, dialoues and general ideas.
+
+
+
+    ## Link
+
+
+
+
+    The assets and the visual novel have been published on GitHub and can be viewed at the following link:
+
+
+    https://github.com/nookyroo/EoDGamified
+
+
+    ## Template
+
+
+    The lightweight open-source game engine and the template used can be accessed via this link:
+
+    https://github.com/JirkaDellOro/FUDGE_Story/tree/main/Template
+  order: 2
+  notes: []
+  start_date: 0001-01-01T00:00:00.0000000
+  end_date: 0001-01-01T00:00:00.0000000
+  shared: true
+- id: tzncewqrfv
+  name: Map Tool
+  blurb: >-
+    # $[objectname]
+
+
+    This page presents the map and the locations visited in the series. It is also where the visual novel can be entered.
+
+
+    ## Brainstorming
+
+    - battlemap?
+
+    - actual table
+
+    - connection to P&P
+
+    - markers on map to mark journey
+
+    - first overview then visual novel on their own
+  order: 3
+  notes: []
+  start_date: 0001-01-01T00:00:00.0000000
+  end_date: 0001-01-01T00:00:00.0000000
+  shared: true
+- id: dytxqlwjbe
+  name: Caspias Journal
+  blurb: >+
+    # $[objectname]
+
+
+    This timeline presents a chronological account of significant events in Echoes of Discordia. It provides context for the story’s world, key historical moments, and major turning points affecting the narrative. It is portrayed through Caspias Journal that she keeps on her in the series.
+
+
+    ## Brainstorming
+
+    - journal entries -> copy caspias
+
+    - portrayed through caspias pov
+
+    - little sketches of situation and plot events
+
+    - notes of the others
+
+    - audio caspia voicing it
+
+
+    ## First Entry
+
+
+    I welcome you to a journal of mine and invite you to accompany us on our journey. Since my last book was slowly reaching the limit of its capacity, I deemed it necessary to start a new one so as not to miss recording important facts. After all, this story is of utter importance and might even become the source of tales of heroes in future times.
+
+
+    Now, we shall start this by recounting our entrance to Kazargaard. By “us,” I mean myself and the other two companions who joined me, each arriving separately. I can say that it was most discouraging. The streets were filled with people sleeping on the ground, and the air was thick with the stench of various excrements. I caught some strange glances here and there, and the entirety of the town was covered in dirt (at least, I hope it was dirt). I found myself in a temple of Kolia, which seemed to be one of the safest places in the town. At least, that was my assumption. There, I spoke with a rather lovely priest named Jack. In my conversation with him, I barely noticed the figure behind me, nearly as dirty as the streets outside, Vanessa, who has since become one of my closest allies and dearest friends. 
+
+
+    Not long after my arrival, a paladin drenched in water entered the temple. He seemed to be searching for someone and had traveled from Moonhaven, calling himself Loraviel. Unfortunately, our pleasantries were cut short when a heavily injured man carrying a chest stumbled into the temple. He was followed by “suitors”, monsters from the Ashlands, as we were later informed, and colapsed right on the spot. With his dying breath, he entrusted the chest to the paladin, Loraviel, tasking him to protect it with his life.
+
+
+    We managed to escape by a hair, thanks to Vanessa leading us over the rooftops. Sadly, the priest, Jack, followed but did not survive the attempt. Vanessa guided us to an allegedly safe place, where we encountered her, let’s call them “friends” for now. By then, the streets were teeming with monsters, filled with screams and blood. Dear reader, I can only pray the townsfolk survived.
+
+
+
+    After having a closer look at the chest, I must confess, oh, if only I could show you the horrific magic covering it. It is unlike anything I have ever seen in my life. It was unanimously decided that we should take it with us and leave Kazargaard for good, or at least until this mystery is solved. As we made our way to the city gates, we noticed they were open. Though I am neither a guard nor a resident of the city, it struck me as strange given the circumstances. 
+
+
+    Against our better judgment, we passed through the gates and were immediately confronted by a horrific monster. A “Vri-Mor,” as Loraviel called it. Strangely enough, it seemed to greet us. Whether it addressed us or the chest we carried remains uncertain. It was a battle of wills to make our passage, as these creatures apparently possess mind-controlling powers. I have never heard of anything quite like it. Were it not for the severity of the situation, I would find its nature fascinating. Fortunately, we escaped and found refuge in a hut on the town’s outskirts, where we now rest.
+
+
+    This, dear reader, is where I write to you from. I hope I can deliver this journal to a library myself and that it does not end up found on a another unnamed corpse somewhere between here and Moonhaven.
+
+
+    Until the next entry,
+
+    Caspia
+
+
+
+    ## Second Entry
+
+    We were awoken today by a horrific scream that pierced the quiet of the early hours. It turned out to be a farmer girl named Tyra, who had been ambushed and surrounded by the same monsters that stormed Kazargaard the day before. By now, I have learned they are called Vaazir.
+
+
+    We managed to defeat the threat, though not without effort. Tyra, grateful for her rescue, led us to her home. Her family and the others there welcomed us with warmth that was a stark contrast to the chaos we had just escaped. The peace inside that humble house made us forget, if only briefly, the horrors lurking outside. For a moment, it felt as though we had found a small sanctuary, a sliver of normalcy amidst the madness.
+
+
+    Unfortunately, dear reader, it turns out you cannot flee from the bloodshed, nor can you hide from it. All we could see was red. The acrid stench of burning flesh in the air and the metallic sound of weapons as reminder that no place is truly safe. 
+
+
+    To a yet uncertain reunion,
+
+    Caspia
+
+  order: 4
+  notes: []
+  start_date: 0001-01-01T00:00:00.0000000
+  end_date: 0001-01-01T00:00:00.0000000
+  shared: true
+- id: xddyfgqrcc
+  name: Monster Compedium
+  blurb: >-
+    # $[objectname]
+
+
+    A detailed bestiary of the creatures encountered in Echoes of Discordia. Each entry includes descriptions, origins, abilities, and relevant lore regarding these beings.
+
+
+
+    ## Brainstorming
+
+    - actual book?
+
+    - entries of the monsters
+
+    - classification (ask)
+
+    - images
+
+    - reviews of the characters?
+
+    - little notes of the others
+
+    - audio voices by loraviel
+
+    - collecting the monsters
+
+    - little cards (like pokemon?)
+  order: 5
+  notes: []
+  start_date: 0001-01-01T00:00:00.0000000
+  end_date: 0001-01-01T00:00:00.0000000
+  shared: true
+- id: hewpmurvps
+  name: Job Hunt
+  blurb: >-
+    # $[objectname]
+
+
+    This page ofers an overview of open positions available in the project.
+
+
+    ## Brainstorming
+
+    - actual newspaper?
+
+    - connected to thievesguild
+
+    - what you bring/what we offer
+  order: 6
+  notes: []
+  start_date: 0001-01-01T00:00:00.0000000
+  end_date: 0001-01-01T00:00:00.0000000
+  shared: true
+blurb: >+
+  # $[objectname]
+
+
+  This wiki serves as a comprehensive record of the notes, asset lists, and brainstorming that shaped this project. Developed as part of a thesis project at HFU, it documents the creation process, with a particular focus on the visual novel and the gamified page. 
+
+
+
+  For an overview of how to navigate this resource, please refer to https://www.the-goblin.net/.
+
+
+  ### The Link to the Visual Novel
+
+  https://nookyroo.github.io/EoDGamified//EchoesOfDiscordiaGamified/EchoesOfDiscordia.html
+
+
+  ### The Link to the Gamified Page
+
+
+  https://xd.adobe.com/view/8563c4eb-b69e-4777-9251-c1d7a552cfe6-d030/?fullscreen&hints=off
+
+
+  ### The Link to the Traditional Page
+
+  https://xd.adobe.com/view/b54c940c-d8ae-43ca-aa89-d9529267760e-e01f/?fullscreen&hints=off
+
+bookmark: ''
+objects:
+- id: qlyeerbjqx
+  objects:
+  - id: owphjbhhhv
+    name: Kazagaard
+    shared_name: 
+    status: 1
+    blurb: >+
+      # $[objectname]
+
+
+      ## official excerp
+
+
+      Kazargaard is a mining city in northern Vormystria. This city is mostly known for its prison and the mines, in which the criminals held there must work under harsh conditions. The city lies at the foot of the Ashfrost mountains that form the natural border with the dangerous Ashlands to the north.  At the heart of Kazargaard lies a labyrinth of narrow alleys with tall buildings made of dark stone, giving the whole city a sinister and foreboding look. Despite this, the city is ruled by a Lord Governor who is known to be strict, but fair.
+
+
+      ## General
+
+      - very dirty
+
+      - rather dark
+
+      - mountains in the back
+
+      - bit of snow/frost on everything
+
+      - sometimes Coal on the ground
+
+      - a bit smoggy
+
+      - most windows shut by shutters
+
+
+      ## Scenes
+
+      #### @[](jhkpqqcrwa)
+
+      - lots of guards
+
+      - heavily armoured
+
+      - thick walls
+
+
+      #### @[](tpkapnkgvg)
+
+      - very narrow streets
+
+      - dark stone walls/houses
+
+      - quite dirty
+
+      - no easy overview
+
+      - Bit labyrinth like
+
+
+      #### @[](jdzidxxotx)
+
+      - pragmatic rather than pretty, but well cared for
+
+      - Stone Walls
+
+      - smaller windows
+
+      - looking a bit like a stronghold (?)
+
+      - thick wooden doors
+
+      - braziers
+
+      - multiple levels
+
+
+      #### @[](qqzhwumrlm)
+
+      - Mostly flat angled roofs (not completely flat)
+
+      - planks all over the place
+
+      - ropes and cloth covers over nooks and crannies
+
+
+      #### @[](jgqepdgajz)
+
+      - Stone Building
+
+      - Nailed shut with Planks
+
+      - Windows covered
+
+      - one broken Window with empty alcohol bottles
+
+      - door with chains and locks
+
+      - inside hidden Trapdoor to cellar
+
+      - inside narrow corridor
+
+      - Room with big table and chairs around it
+
+      - some shelves and boxes
+
+      - big door opened a bit with office table peeking through/maybe a bar??
+
+
+    order: 1
+    notes: []
+    chapters:
+    - tnjnmuwest
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children:
+    - id: jhkpqqcrwa
+      name: City Wall
+      shared_name: 
+      status: 1
+      blurb: >
+        # $[objectname]
+
+        ![Kazagaard Streets](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Locations/Kazagaard_CityGate.jpg)
+
+
+
+        = @[](bwgckdbypc) Main Speaker
+
+
+        ## First Time visiting (=Starting Point)
+
+
+        >**@[](bwgckdbypc):**"Wow nearly bumped into you there, watch where you're going! Mail coming through!" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):**"Sorry I... hey wait a second! You seem like you know your way around here. Mind showing me around?" <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Sure! That'll be 5 silver" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** Gives her 5 silver <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Lesson one to survive in Kazagaard: don't let yourself be ripped off. Hey no taking backsies, take it as my teacher fee. See the people here are the worst of the worst criminals, kept in the mines to pay for their heinous crimes. Just kiddiiinnngggg, we're chill. (cough) Mostly. What? You don hear nothing. But really this shithole is known for its prisons and mines where the Inmates work their asses off. You can see some of those caves right there at the Ashfrost Mountains. What's behind them? The Ashlands dummy. Don't ever go there! I mean it. It's a dangerous place, I can't loose my only... I mean best customer.<br>
+
+        > 
+
+
+        >**@[](njnrsscgba):** "No I'm searching a Paladin! Big guy, wearing chain mail. Probably with the symbol of Kolia like the one on my plate here." <br>
+
+        >
+
+
+        >**young girl:** "Oh my god he's an elf!" <br>
+
+        >
+
+
+
+        >**younf boy:** "And a Paladin too!!" <br>
+
+        >
+
+        >**@[](njnrsscgba):** "Please keep your hands of my sword young one's! I'll have to keep going with my mission for now, but I promise we can play hide and seeek later." <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Anyways the guard is about to change so let's move on. What? I'm not evading someone you are. Come or don't I don't care. Oh I'm Vanessa by the way. Nice to meet you pipsqueak!" <br>
+
+        >
+
+        >&rarr; Follow her <br>
+
+        >
+
+        >&rarr; Learn more about her (Leave page) [go to @[](bwgckdbypc) Character Page]<br>
+
+        >
+
+
+        >**@[](bwgckdbypc):**"Sooo... any sightseeing points in mind?" <br>
+
+        >
+
+        >&rarr; "Is that a @[](jdzidxxotx) of Kolia over there?" <br>
+
+        >
+
+        >&rarr; "I can barely see anything here. I bet the view would be better up on the @[](qqzhwumrlm)"<br>
+
+        >
+
+        >&rarr; "I've heard @[](owphjbhhhv) has quite the famous  @[](jgqepdgajz)?"
+
+        >
+
+
+
+        ##### Is that a @[](jdzidxxotx) of Kolia over there?
+
+
+        > **@[](bwgckdbypc):** "You believe in gods? Sure let's take a peek in there. The light shining through the window at this time of day is great."
+
+
+        **_This triggers the Location: @[](jdzidxxotx)_**
+
+
+
+
+        ##### I can barely see anything here. I bet the view would be better up on the @[](qqzhwumrlm)
+
+
+        >**@[](bwgckdbypc):** "Oh you bet it is! Come on I'll show you!"
+
+
+        **_This triggers the Location: @[](qqzhwumrlm)_**
+
+
+
+        ##### I've heard @[](owphjbhhhv) has quite the famous  @[](jgqepdgajz)?
+
+
+        >**@[](bwgckdbypc):** "What?! How do you.... I mean never mind. Lower your voice if you need to talk about it and follow me inconspicuously."
+
+
+        **_This triggers the Location: @[](jgqepdgajz)_**
+
+
+        </br>
+
+
+
+
+        ## Second Time visiting
+
+
+        >**@[](bwgckdbypc):**"Back here again. No worries I keep thinking about leaving this shit hole too. Then again..." <br>
+
+
+        ### After visiting the @[](jdzidxxotx)
+
+
+        >**@[](bwgckdbypc):**"Back here again. No worries I keep thinking about leaving this shit hole too. Then again..." <br>
+
+        >
+
+        >&rarr; "Could we have a look at the @[](jdzidxxotx) again?" <br>
+
+        >
+
+        >&rarr; "I can barely see anything here. I bet the view would be better up on the @[](qqzhwumrlm)"<br>
+
+        >
+
+        >&rarr; "I've heard @[](owphjbhhhv) has quite the famous  @[](jgqepdgajz)?"
+
+        >
+
+
+        ##### Could we have a look at the @[](jdzidxxotx) again?
+
+
+        > **@[](bwgckdbypc):** "Sure! I could spend hours looking at those windows!"
+
+
+        **_This triggers the Location: @[](jdzidxxotx)_**
+
+
+
+        ##### I can barely see anything here. I bet the view would be better up on the @[](qqzhwumrlm)
+
+
+        >**@[](bwgckdbypc):** "Oh you bet it is! Come on I'll show you!"
+
+
+        **_This triggers the Location: @[](qqzhwumrlm)_**
+
+
+
+        ##### I've heard @[](owphjbhhhv) has quite the famous  @[](jgqepdgajz)?
+
+
+        >**@[](bwgckdbypc):** "What?! How do you.... I mean never mind. Lower your voice if you need to talk about it and follow me inconspicuously."
+
+
+        **_This triggers the Location: @[](jgqepdgajz)_**
+
+
+        </br>
+
+
+
+
+
+
+        ### After visiting the @[](qqzhwumrlm)
+
+        >**@[](bwgckdbypc):**"Back here again. No worries I keep thinking about leaving this shit hole too. Then again..." <br>
+
+        >
+
+        >&rarr; "Is that a @[](jdzidxxotx) of Kolia over there?" <br>
+
+        >
+
+        >&rarr; "The look on top of the @[](qqzhwumrlm) was stunning. Can we go go there again? "<br>
+
+        >
+
+        >&rarr; "I've heard @[](owphjbhhhv) has quite the famous  @[](jgqepdgajz)?"
+
+        >
+
+
+
+        ##### Is that a @[](jdzidxxotx) of Kolia over there?
+
+
+        > **@[](bwgckdbypc):** "You believe in gods? Sure let's take a peek in there. The light shining through the window at this time of day is great."
+
+
+        **_This triggers the Location: @[](jdzidxxotx)_**
+
+
+        ##### he look on top of the @[](qqzhwumrlm) was stunning. Can we go go there again?
+
+
+        >**@[](bwgckdbypc):** "Ah a person of taste I see. No complaints here I can deliver some letters while we're at it, it's the fastest way."
+
+
+        **_This triggers the Location: @[](qqzhwumrlm)_**
+
+
+
+        ##### I've heard @[](owphjbhhhv) has quite the famous  @[](jgqepdgajz)?
+
+
+        >**@[](bwgckdbypc):** "What?! How do you.... I mean never mind. Lower your voice if you need to talk about it and follow me inconspicuously."
+
+
+        **_This triggers the Location: @[](jgqepdgajz)_**
+
+
+        </br>
+
+
+
+
+
+        ### After visiting the @[](jgqepdgajz)
+
+        >**@[](bwgckdbypc):**"Back here again. No worries I keep thinking about leaving this shit hole too. Then again..." <br>
+
+        >
+
+        >&rarr; "Is that a @[](jdzidxxotx) of Kolia over there?" <br>
+
+        >
+
+        >&rarr; "I can barely see anything here. I bet the view would be better up on the @[](qqzhwumrlm)"<br>
+
+        >
+
+        >&rarr; "Do you think there are new 'quests' to get? Can we visit the @[](jgqepdgajz) again?"
+
+        >
+
+        ##### Is that a @[](jdzidxxotx) of Kolia over there?
+
+
+        > **@[](bwgckdbypc):** "You believe in gods? Sure let's take a peek in there. The light shining through the window at this time of day is great."
+
+
+        **_This triggers the Location: @[](jdzidxxotx)_**
+
+
+
+
+        ##### I can barely see anything here. I bet the view would be better up on the @[](qqzhwumrlm)
+
+
+        >**@[](bwgckdbypc):** "Oh you bet it is! Come on I'll show you!"
+
+
+        **_This triggers the Location: @[](qqzhwumrlm)_**
+
+
+
+        ##### Do you think there are new 'quests' to get? Can we visit the @[](jgqepdgajz) again?
+
+
+        >**@[](bwgckdbypc):** "I mean sure but I doubt there has been much of a change. But I like that attitude!"
+
+
+        **_This triggers the Location: @[](jgqepdgajz)_**
+
+
+        </br>
+      order: 1
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: tpkapnkgvg
+      name: Street
+      shared_name: 
+      status: 1
+      blurb: >+
+        # $[objectname]
+
+        ![Kazagaard Streets](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Locations/Kazagaard_Streets.png)
+
+
+
+        >**@[](mcekaaxtum):**"The bustling streets are teeming with people, packed so tightly that it’s nearly impossible to turn without brushing against someone else. A nagging feeling in the back of your mind urges you to keep an eye on your bag. Children dart through the crowds, laughing as they chase rats, while hawkers shout at the top of their lungs, extolling the virtues of their latest wares." <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):**"Did you know I'm also a hawker." <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):**"I thought you were a mail carrier?" <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):**"That too. And now apparently professional City tour guide. Gotta keep busy here in Kazagaard. So where to next?" <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):**"Sooo... any sightseeing points in mind?" <br>
+
+        >
+
+        >&rarr; "Is that a @[](jdzidxxotx) of Kolia over there?" <br>
+
+        >
+
+        >&rarr; "I can barely see anything here. I bet the view would be better up on the @[](qqzhwumrlm)"<br>
+
+        >
+
+        >&rarr; "I've heard @[](owphjbhhhv) has quite the famous  @[](jgqepdgajz)?"
+
+        >
+
+
+
+        ##### Is that a @[](jdzidxxotx) of Kolia over there?
+
+
+        > **@[](bwgckdbypc):** "You believe in gods? Sure let's take a peek in there. The light shining through the window at this time of day is great."
+
+
+        **_This triggers the Location: @[](jdzidxxotx)_**
+
+
+
+
+        ##### I can barely see anything here. I bet the view would be better up on the @[](qqzhwumrlm)
+
+
+        >**@[](bwgckdbypc):** "Oh you bet it is! Come on I'll show you!"
+
+
+        **_This triggers the Location: @[](qqzhwumrlm)_**
+
+
+
+        ##### I've heard @[](owphjbhhhv) has quite the famous  @[](jgqepdgajz)?
+
+
+        >**@[](bwgckdbypc):** "What?! How do you.... I mean never mind. Lower your voice if you need to talk about it and follow me inconspicuously."
+
+
+        **_This triggers the Location: @[](jgqepdgajz)_**
+
+
+        </br>
+
+
+
+
+
+
+      order: 2
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: jdzidxxotx
+      name: Temple
+      shared_name: 
+      status: 1
+      blurb: >
+        # $[objectname]
+
+
+        ![Kazagaard Temple](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/caec6608-f2b8-4661-9ee5-9698fbcf8498.webp)
+
+
+        Music: Stakeout
+
+
+        = @[](bwgckdbypc) Main Speaker
+
+
+        ## First Time visiting
+
+
+        >**@[](mcekaaxtum):** The temple stands tall amidst the small houses stacked haphazardly atop one another. As you push open the massive oak doors, a wave of incense and the faint tang of metal fills the air. Towering walls stretch high above your head, and at the far end of the hall stands a colossal statue of a man clad in heavy armor. </br>
+
+        > Dim light filters through the stained glass windows, fracturing into muted hues before it can fully illuminate the space. To the side, a staircase adorned with ornate braziers spirals upward toward the church’s upper quarters.</br>
+
+        >In the center of the hall, a priest converses in hushed tones with a red-haired girl, their voices barely audible amidst the solemn silence. </br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Beautiful right? I love coming here to admire the lighting. Those windows just do the trick." <br>
+
+        >
+
+
+
+        >**@[](kvtcwuochw):** "It's a different vibe to the outside town, that's for sure. Remind me, what is this god's domain again?" <br>
+
+        >
+
+
+
+        >**@[](bwgckdbypc):** " Oh Kolia? He's responsible for warriors or something along those lines. The priest might know more but.. he seems busy. Maybe ask a Paladin when you see one, they're all about it. So what now? " <br>
+
+        >
+
+
+
+        >**@[](kvtcwuochw):** "Hmm" <br>
+
+        >
+
+        >&rarr; "What do you think those two are talking about?" <br>
+
+        >
+
+        >&rarr; "Let's go somewhere else then." <br>
+
+        >
+
+
+        ##### What do you think those two are talking about?
+
+
+        >**@[](bwgckdbypc):** "I like the way you're thinking." <br>
+
+        >
+
+
+
+        >**@[](ebupyvqypr):** "Do you really not know when she will be back?" <br>
+
+        >
+
+
+        >**Priest:** "Unfortunately not Ma'am." <br>
+
+        >
+
+
+        >**@[](ebupyvqypr):** "Well, it is of utmost importance that I speak to her as quickly as possible before... uhm... Do you wish to consult with Father Jack?  By all means, take your time. I shall wait until you're finished." <br>
+
+        >
+
+
+
+        >**@[](kvtcwuochw):** "Oh no don't mind us, keep on talking." <br>
+
+        >
+
+
+        >**@[](ebupyvqypr):** I'd rather not discuss delicate matters with strangers, if it's all the same to you. So if you don't mind?" <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Oh our humble apologies. We'll be on our way first! Come on pipsqueak. Arrogant snob. Let's go somewhere that doesn't stink of flowers and money." <br>
+
+        >
+
+
+        **_This triggers the Location: @[](tpkapnkgvg)_**
+
+
+        </br>
+
+
+
+        ##### Let's go somewhere else then.
+
+
+        >**@[](mcekaaxtum):** As you leave the Temple you can't help but feel watched... <br>
+
+        >
+      order: 3
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: qqzhwumrlm
+      name: Rooftops
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Kazagaard Streets](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Locations/Kazagaard_CityRooftops.png)
+
+
+        Music: Silk and Spice
+
+
+        = @[](bwgckdbypc) Main Speaker
+
+
+        ## First Time visiting
+
+
+        >**@[](bwgckdbypc):** "Isn't this a sight to behold? Also the fastest way to get around here." <br>
+
+        >
+
+
+        >**@[](mcekaaxtum):** In front of you, the bustling streets resemble ants mingling through the dirt. Even at this height, buildings stack atop one another, connected only by small planks and ropes. Birds scatter as you reach the top of yet another ladder, leading even higher. From this vantage point, the Ashland Mountains in the distance cast a foreboding shadow over Kazagaard. The mountain tops' white mantles contrast sharply with the grey, foggy city below, and for once, the air feels clean and refreshing.  <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Wow it looks..." <br>
+
+        >
+
+
+        >**@[](mcekaaxtum):** "As your focus shifts back to the labyrinth of streets below, you see people sprinting, others vandalizing walls, pigs and rats running freely,  and pickpockets fleeing from their screeching victims, who _coincidentally_ seem to carry knives." <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "interesting." <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Isn't it just? I love coming up here. It's the only way to endure this lame excuse of a town. The only other nice view coming even close is the Temple of Kolia." <br>
+
+        >
+
+
+        >**@[](mcekaaxtum):** "The planks beneath your feet squeak as Vanessa skillfully guides you across the rooftop tiles." <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Careful now, we wouldn't want you to fall! It's quite slippery up here." <br>
+
+        >
+
+
+        >**@[](mcekaaxtum):** "A sudden movement catches your eye, something tall and dark disappearing behind a corner before you can make out what it is. Your gaze shifts to the narrow gap beside the corner, where the edge of the roof glistens with ice. A grappling hook clings to one of the ledges, its rope dangling down the side of the roof. Frost coats its lower section, where a seemingly once-wet substance appears to have frozen. The rope’s deep, saturated red stands out starkly against the icy backdrop.<br>
+
+        > On the other side of the gap lies a puddle, barely recognizable, washed away by the afternoon rain. As Vanessa skillfully guides you past it, your eyes catch the shattered remains of a wooden plank scattered across the ground." <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "What happened here? <br>
+
+        >
+
+
+        >**@[](mcekaaxtum):** "Vanessa doesn't answer, but you notice a light shift in her demeanor as she kept on walking. </br>
+
+        > You’re jolted from your musings as the massive clock ahead strikes. Its hollow bell echoes through the alleys, sending a chill down your spine. Kolias Temple looms in the distance, its imposing structure a silent sentinel. It seems to watch over everything, guarding ancient secrets yet to be unraveled. <br>
+
+        >
+
+
+        ### If you want to press on about the matter yo can watch the corresponding episode!
+
+        **_This opens the YouTube Link_**
+
+
+        ### Let it go and continue to follow her.
+
+        **_The scene continues to play_**
+
+
+        >**@[](bwgckdbypc):** "That's the biggest part of it. Where do you want to go now?" <br>
+
+        >
+
+
+
+
+        >**@[](kvtcwuochw):** "Let's" <br>
+
+        >
+
+        >&rarr; "Get down again first." <br>
+
+        >
+
+        >&rarr; "Go back a few steps. I think I saw something." <br>
+
+        >
+
+
+        ##### Get down again first.
+
+
+        >**@[](bwgckdbypc):** "Back into the chaos we go then!" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Yay..." <br>
+
+        >
+
+
+
+        **_This triggers the Location: @[](tpkapnkgvg)_**
+
+
+        </br>
+
+
+
+        ##### Go back a few steps. I think I saw something.
+
+
+        >**@[](mcekaaxtum):** You walk towards the edge of the roof again, the ice glistening in the light sun rays. <br>
+
+        >
+
+
+        ### If you want to press on about the matter yo can watch the corresponding episode!
+
+        **_This opens the YouTube Link_**
+
+
+        ### Let it go and continue to follow her.
+
+        **_The scene continues to play_**
+
+
+        >**@[](bwgckdbypc):** "That's the biggest part of it. Where do you want to go now?" <br>
+
+        >
+
+
+        **_This triggers the Option Menu_**
+
+
+
+        ## Second time visiting
+
+
+        >**@[](bwgckdbypc):** "Look at this view." <br>
+
+        >
+
+
+        >**@[](mcekaaxtum):** The Ashfrost Mountains glisten in the distance, looming over the region like a threat. In contrast, Kolias Temple stands as a final bastion of hope, a last defiance against the encroaching darkness.  <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Let's" <br>
+
+        >
+
+        >&rarr; "Get down again first." <br>
+
+        >
+
+        >&rarr; "Go back a few steps. I think I saw something." <br>
+
+        >
+
+
+        ##### Get down again first.
+
+
+        >**@[](bwgckdbypc):** "Back into the chaos we go then!" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Yay..." <br>
+
+        >
+
+
+
+        **_This triggers the Location: @[](tpkapnkgvg)_**
+
+
+        </br>
+
+
+
+        ##### Go back a few steps. I think I saw something.
+
+
+        >**@[](mcekaaxtum):** You walk towards the edge of the roof again, the ice glistening in the light sun rays. <br>
+
+        >
+
+
+        ### If you want to press on about the matter yo can watch the corresponding episode!
+
+        **_This opens the YouTube Link_**
+
+
+        ### Let it go and continue to follow her.
+
+        **_The scene continues to play_**
+
+
+        >**@[](bwgckdbypc):** "That's the biggest part of it. Where do you want to go now?" <br>
+
+        >
+
+
+        **_This triggers the Option Menu_**
+      order: 4
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: jgqepdgajz
+      name: Liquor Store
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Liquor Store](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/f61b81ba-d516-42a5-b37a-9a3beb8399c3.webp)
+
+
+        Music: secret Dispatch
+
+
+        = @[](bwgckdbypc) Main Speaker
+
+
+        ## First Time visiting
+
+
+        >**@[](bwgckdbypc):**"Welcome to our humble abode! Don't mind the people laying on the table. Those two don't know when to stop drinking." <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):**"Ugh it smells like a distillery in here." <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Well what did you expect, it's an Liquor Store after all. Why do people always assume I'm lying?" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Maybe think about that a second? <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "... Second's over, no clue. Anyways try not to trip over the goods. This place is supposed to be a secret, got it? Cedric is going to blame me if you babble on about it in public so behave." <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Who's Cedric again?" <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Cedric as in the Boss here? How did you say you know about this place again? Well he's back in his office right now, let's see if he's free." <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** You walk over to the office door and try to push it open. (Sound) It doesn't budge. <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "That's weird... He never locks his office." <br>
+
+        >
+
+
+        ### Button: Want to see what's behind the door? Watch the Episode.
+
+        **_This opens the YouTube Link_**
+
+
+        ### Leave it be
+
+
+        **_This triggers the Option Menu_**
+
+
+
+        >**@[](bwgckdbypc):** "Well he's a busy man. Oh how about we check out the Questboard" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Sounds good to me!" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** The Questboard is filled with Articles and Notes. <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Something caught your eye?" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Not really." <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "How about visiting something else then?" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Let's" <br>
+
+        >
+
+
+        >&rarr; "Try the door to Cedrics Office again." <br>
+
+        >
+
+        >&rarr; "Have a look at the Questboard." <br>
+
+        >
+
+        >&rarr; "Go somewhere else instead." <br>
+
+        >
+
+
+
+        ##### Try the door to Cedrics Office again.
+
+
+        >**@[](kvtcwuochw):** You walk over to the office door and try to push it open. (Sound) It doesn't budge. <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Nope still locked." <br>
+
+        >
+
+
+        ### Button: Want to see what's behind the door? Watch the Episode.
+
+        **_This opens the YouTube Link_**
+
+
+        ### Leave it be
+
+
+        **_This triggers the Option Menu_**
+
+
+
+
+        ##### Have a look at the Questboard
+
+
+        >**@[](kvtcwuochw):** The Questboard is filled with Articles and Notes. <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Something caught your eye?" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Not really." <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "How about visiting something else then?" <br>
+
+        >
+
+
+        **_This triggers the Option Menu_**
+
+
+
+        ##### Go somewhere else instead.
+
+
+        >**@[](bwgckdbypc):** "Sure thing. BYE SLEEPYHEADS."
+
+
+        **_This triggers the Location: @[](tpkapnkgvg)_**
+
+
+        </br>
+
+
+        ## Second time visiting
+
+
+        >**@[](bwgckdbypc):** "Look at those two! Drunk as drunk can be. Anything you wanted here in particular?" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Let's" <br>
+
+        >
+
+
+        >&rarr; "Try the door to Cedrics Office again." <br>
+
+        >
+
+        >&rarr; "Have a look at the Questboard." <br>
+
+        >
+
+        >&rarr; "Go somewhere else instead." <br>
+
+        >
+
+
+
+        ##### Try the door to Cedrics Office again.
+
+
+        >**@[](kvtcwuochw):** You walk over to the office door and try to push it open. (Sound) It doesn't budge. <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Nope still locked." <br>
+
+        >
+
+
+        ### Button: Want to see what's behind the door? Watch the Episode.
+
+        **_This opens the YouTube Link_**
+
+
+        ### Leave it be
+
+
+        **_This triggers the Option Menu_**
+
+
+
+
+        ##### Have a look at the Questboard
+
+
+        >**@[](kvtcwuochw):** The Questboard is filled with Articles and Notes. <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "Something caught your eye?" <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Not really." <br>
+
+        >
+
+
+        >**@[](bwgckdbypc):** "How about visiting something else then?" <br>
+
+        >
+
+
+        **_This triggers the Option Menu_**
+
+
+
+        ##### Go somewhere else instead.
+
+
+        >**@[](bwgckdbypc):** "Sure thing. BYE SLEEPYHEADS."
+
+
+        **_This triggers the Location: @[](tpkapnkgvg)_**
+
+
+        </br>
+      order: 5
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    statblock: 
+    subtype: location
+  - id: ccgrzrxnpp
+    name: Moonhaven
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ## Official Excerp
+
+      Moonhaven is a city in Aldergard along a river that is fed from snowmelt from the Ashfrost mountains to the north. Moonhaven is a beautiful and prosperous city, with walls of pale stone, and is most famous for its large temple to The Magic Lady, who is considered the patroness and protector of the city. There is a prestigious magic academy as well as many alchemists. Moonhaven does sometimes have to protect itself against incursions from the Ashlands, but the people are hardy and well prepared.
+
+
+      ## General
+
+      - white marble
+
+      - prosperous
+
+      - clean
+
+      - lots of magic users
+    order: 2
+    notes:
+    - id: oxqmtxydya
+      blurb: Music Arriving at the lost temple for tomb
+      created_at: 2024-12-14T17:02:04.2124632Z
+      campaign_note: false
+      shared: false
+    chapters:
+    - tnjnmuwest
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children:
+    - id: zzuddenzns
+      name: City Entrance
+      shared_name: 
+      status: 1
+      blurb: >+
+        # $[objectname]
+
+        #### Music: Barn of Creake
+
+        = @[](ebupyvqypr) Main Speaker
+
+
+        ![Moonhaven Upper Town](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Locations/Moonhaven_CityEntrance.jpg)
+
+
+        Music: Barn of Creake
+
+
+        ## First Time visiting (=Starting Point)
+
+
+        > **Guard:** "Halt! You there, stop where you are! This area is restricted. Only citizens or students are allowed beyond this point or do you have an invitation?" </br>
+
+        >
+
+
+        > **@[](kvtcwuochw):** "Oh I'm sorry I was just searching the library. I thought this was part of the university?" </br>
+
+        >
+
+
+        > **Guard:** "And you're a student of said university? Hahaha Sure. And I'm the govenor. Move along or I'll ..." </br>
+
+        >
+
+
+        > **@[](ebupyvqypr):** "Greetings general. What seems to be the issue here?" </br>
+
+        >
+
+
+
+        > **@[](mcekaaxtum):** 
+
+        A high voice behind you makes the guard snap to attention. A girl steps up beside you, casting a quick glance your way as you meet her gaze with pleading eyes.
+
+        </br>
+
+        >
+
+
+        > **Guard:** "M-Miss Caspia! A pleasure, as always. No classes today, I take it?" </br>
+
+        >
+
+
+
+        > **@[](ebupyvqypr):** "Lovely of you asking, General. Classes ended early today. I was just exploring the local market when I realized my friend here was waiting for me." </br>
+
+        >
+
+
+        > **Guard:** "Your friend?" </br>
+
+        >
+
+
+        > **@[](ebupyvqypr):** "Indeed. How thoughtful of you to keep them company while they waited. </br>
+
+        >
+
+
+        > **Guard:** "Of course Miss. Just make sure next time you don't make people wait at the gate without giving them a written invite. " </br>
+
+        >
+
+
+        > **@[](ebupyvqypr):** "Did I not? My humble apollogies for the inconvenience, general. I must have been caught up with my studies. Anywho, have a lovely day, we'll be on our merry way. </br>
+
+        >
+
+
+        > **Guard:** "You too." </br>
+
+        >
+
+
+        > **@[](ebupyvqypr):** "Come along, won’t you? " </br>
+
+        >
+
+
+
+        > **@[](kvtcwuochw):** "Thank you for getting me out of that! I thought the library in Moonhaven had public access." </br>
+
+        >
+
+
+        > **@[](ebupyvqypr):** It should have! The people in the upper city grew a bit anxious after a few incidents that happened lately, so it is locked down for the general public. The larger university buildings in the downtown are open, but up here you'll need a student id.. or well, noble status." </br>
+
+        >
+
+
+        > **@[](kvtcwuochw):** "Wow really? What incidents?" </br>
+
+        >
+
+
+        > **@[](ebupyvqypr):** "Something including tea and poison, but the city guard is taking care of it. Not to worry, this will be over in no time!" </br>
+
+        >
+
+
+
+        >**@[](kvtcwuochw)**"Choices" <br>
+
+        >
+
+        >&rarr; "Push on about the incidents." <br>
+
+        >
+
+        >&rarr; "Let it go."<br>
+
+        >
+
+
+
+        > **@[](ebupyvqypr):** "You don't seem to be from here, how about I show you around a bit!" </br>
+
+        >
+
+
+
+        > **@[](kvtcwuochw):** "That'd be great!" </br>
+
+        >
+
+
+      order: 1
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: ihhwxqnyrj
+      name: Town Square
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        = @[](ebupyvqypr) Main Speaker
+
+
+        ![Westfjord Gate](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Locations/Moonhaven_TownSquare.jpg)
+
+
+        ## First Time visiting 
+
+
+        >**@[](kvtcwuochw):**"The guard mentioned courses. Do you study here?" <br>
+
+        >
+
+
+        >**@[](ebupyvqypr):**"I do yes. Oh! If you want I can show you my favourite reading spots! Or wait.. you wanted to see the library first didn't you? Or maybe we could go to ..." <br>
+
+        >
+
+        >&rarr; "Alright. Let's go to the @[](bjubcsqoyk)" <br>
+
+        >
+
+        >&rarr; "Actually I want to see the @[](uezbuefrcp)"<br>
+
+        >
+
+        >&rarr; "Do you have access to the @[](zyfyfnobeh) Building?"
+
+        >
+
+
+
+        ##### Alright. Let's go to the @[](bjubcsqoyk)
+
+        >**@[](ebupyvqypr):**"yes! Let's go! Oh this tour will be amazing!" <br>
+
+        >
+
+
+        ##### Actually I want to see the @[](uezbuefrcp)
+
+        >**@[](kvtcwuochw):**"Oh are you a follower? Sure I'll show you." <br>
+
+        >
+
+
+        ##### Do you have access to the @[](zyfyfnobeh) Building?
+
+        >**@[](kvtcwuochw):**"Sure I do, but why would you want to go there?" <br>
+
+        >
+      order: 2
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: bjubcsqoyk
+      name: University
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+        ![Moonhaven University](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/a6d6d0c7-e06c-4b5e-9998-5e1f56c2849c.webp)
+
+
+        >**@[](ebupyvqypr):**"Here we are! Moonhaven University! Stunning isn't it? The towering neoclassical columns, the gleaming marble facade, and… oh, the unicorn statues! Did you know those are named Lumina and Solis? They represent enlightenment and wisdom, two of the pillars of everything we do here. Their horns are enchanted to reflect the light of both the sun and the moon, casting iridescent patterns that shift depending on the time of day. By Andano you should see the Square at a full moon, it is magnificent. If you look closely at the reliefs above the main entrance, you’ll see a tapestry of glyphs and runes. Each one represents a foundational spell or discovery made by the university’s first Circle of scholars. It’s a symbol of endless potential,just like every student who walks through these doors." <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "So you like the stars? Oh I shouldn't have asked </br>
+
+        >
+
+
+        >**@[](ebupyvqypr):** "I love them. They’re like little beacons of endless possibilities, don’t you think? Each one holds its own mysteries and stories, reminding us that no matter how vast or daunting the universe seems, there’s always something to hope for. " <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "That was... actually very short. I was expecting a science excerp. </br>
+
+        >
+
+
+        >**@[](ebupyvqypr):** "Oh I can give you one if you insist." <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "No, please don't! </br>
+
+        >
+
+
+
+        >**@[](ebupyvqypr):** "That's what I thought. How about going inside? There is so much more to see." <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "No thank you! I've had enough lessons for today! </br>
+
+        >
+
+
+        >**@[](ebupyvqypr):** "Oh come ooon, it's gonna be fun I promise." <br>
+
+        >
+
+
+
+        ## Follow inside
+
+        >**@[](kvtcwuochw):** "We have different ideas of fun it seems.</br>
+
+        >
+
+
+        >**@[](ebupyvqypr):** "Oh come now. Welcome to the halls of Moonhaven University! " <br>
+
+        >
+
+
+        >**@[](ebupyvqypr):** "These statues that stand guard along the corridor? They are the likenesses of some of the most renowned mages alive today. It is said that they protect our every step, guiding us in Andanos Footsteps. And you see the star map painted on the ceiling? They symbolize the goddess herself. Can you imagine, just for a moment, walking these same paths as the greatest minds in magic history? To stand where they stood, to learn what they learned?
+
+        <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Not really no.</br>
+
+        >
+
+
+
+        >**@[](ebupyvqypr):** "You're a tough one, huh? Ok so how about this: We have the largest library in all twelve kingdoms. Seventy million manuscripts, each carefully cataloged and organized into a color-coded system of unmatched precision. Our professors are the finest in their fields, each one mentoring a small amount of students through every challenge. We have laboratories for every kind of science you could imagine. Astronomy, elemental magic and herbology, just to name a few. Each one is a hub of innovation, incorporating the latest advancements from across all of nexor.
+
+        <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Wooooow. Is the brochure you got that from also in the library."</br>
+
+        >
+
+
+        >**@[](ebupyvqypr):** "Is there anything that fascinates you at all?
+
+        <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "I'm just mocking you. Go on."</br>
+
+        >
+
+
+
+        Our student quarters are just up the staircase. Each student receives a room, equipped with all the necessary tools for their studies, as well as catering. But here’s the best part: anyone can become a student here. Everyone with enough determination can start out with simple magic, although a natural inclination for more advanced studies helps of course. Isn’t that the beauty of knowledge? It’s something we can all reach, no matter where we begin. So, when you first start, you’ll begin by learning basic incantations, or how to get away from dangerous experiments if something goes wrong. Incredibly useful especially in the beginning. After you master it you have the option to participate in testings to get into the next stage of the ranking where you can take advanced classes in... why are you looking at me like that?
+
+
+
+        >**@[](kvtcwuochw):** "Nerd."</br>
+
+        >
+
+
+        >**@[](ebupyvqypr):** "I should have left you at the gate."
+
+        <br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Let's not make any sudden decisions. How about checking out some other places to cool off?"</br>
+
+        >
+
+
+
+        >**@[](ebupyvqypr):** "Fine. A bit of fresh air might help indeed.
+
+        <br>
+
+        >
+      order: 3
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: zyfyfnobeh
+      name: Parliament
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Moonhaven University](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Locations/Moonhaven_TownHall.jpg)
+      order: 4
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: uezbuefrcp
+      name: Temple of Andano
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Kazagaard Streets](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Locations/Moonhaven_AndanoTempleAlternative1.jpg)
+
+
+
+        Music: Celestial Gate Dark Delirium/ Dark Corners
+      order: 5
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: kamxcqahxy
+      name: Tomb
+      shared_name: 
+      status: 1
+      blurb: >+
+        # $[objectname]
+
+
+        ![Kazagaard Streets](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Locations/Moonhaven_Tomb.jpg)
+
+
+
+        >**@[](mcekaaxtum):** You squeeze through the narrow shaft, and cold air rushes into your face. Dust stretches over the improvised cavern floor, which seems to have been carved deep into the mountain centuries ago." </br>
+
+        >
+
+
+        >**@[](kvtcwuochw):**"Caspia did you know about this cave?" </br>
+
+        >
+
+
+        >**@[](ebupyvqypr):**"I don't think anyone knows! Oh dear, we shouldn't be here." </br>
+
+        >
+
+
+        >**@[](mcekaaxtum):** Your gaze drifts over the intricate symbols carved into the walls. Then, in front of you, the statue of a massive monster looms. The creature's mouth stands wide open, as if preparing to bite the path ahead, drawing you deeper into its belly. Yet, despite its terrifying appearance, the statue remains still, incapable of ever closing its jaws." </br>
+
+        >
+
+
+
+        >**@[](ebupyvqypr):**"Oh we definetely shouldn't be here!" </br>
+
+        >
+
+
+        >**@[](kvtcwuochw):**"Relax what's the worst that could happen?" </br>
+
+        >
+
+
+        >**@[](mcekaaxtum):** The corner of your vision darkens a bit, and your head begins to thrum as you continue walking. A shiver runs down your spine. Your breath forms small clouds as you exhale into the cold cave. The torches along the walls are lit, but their weak glow seems to be swallowed whole by the endless darkness ahead. Then you hear a faint sound from the deeper parts of the cavern. The faint sounds of porcelain clicking. " </br>
+
+        >
+
+
+        >**@[](ebupyvqypr):**"NOPE! No. Nu-uh! Definetely not, we're leaving." </br>
+
+        >
+
+
+        >**@[](kvtcwuochw):**"Wow you're such a scaredy-cat." </br>
+
+        >
+
+
+        >**@[](ebupyvqypr):**"I don’t exactly have the best track record with tea lately." </br>
+
+        >
+
+
+        >**@[](kvtcwuochw):** "Let's" <br>
+
+        >
+
+        >&rarr; "Get down again first." <br>
+
+        >
+
+        >&rarr; "Right! I forgot! Let's get out of here." <br>
+
+        >
+
+      order: 6
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    statblock: 
+    subtype: location
+  - id: xrbikcxnck
+    name: Outskirts
+    shared_name: 
+    status: 1
+    blurb: >+
+      # $[objectname]
+
+
+      ## official excerp
+
+
+      Connecting all the major cities in the region, this area is predominantly characterized by small villages scattered across vast expanses of untamed wilderness. These rural settlements, surrounded by fertile lands, are heavily reliant on agriculture as their primary means of livelihood. Farming dominates the landscape, with crops and livestock sustaining both local needs and contributing to trade with the surrounding cities. The roads and pathways through this region serve as lifelines, ensuring the flow of goods, services, and cultural exchange, all while preserving the rustic charm and natural beauty that define it.
+
+
+      ![Kazagaard Streets](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Locations/Outskirts.jpg)
+
+
+
+    order: 3
+    notes: []
+    chapters:
+    - tnjnmuwest
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children:
+    - id: lkrrghlsvt
+      name: Forest
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Forest Entry](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/cb1ab502-9d03-41a3-8b46-164dffd325c5.webp)
+      order: 1
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: pesbuvyehy
+      name: Abandoned Hut
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Abandoned Hut](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/37e73419-4dd2-4b5a-aeb4-ba051d1b0653.webp)
+      order: 2
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: suplcawebs
+      name: Family Home
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Family Home 3](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/20572d7d-8bc6-42e1-a6e1-affbb916b65a.webp)
+      order: 3
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: abodwbzpde
+      name: Path to Kazagaard
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Kazagaard Distance](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/f858b641-1c28-4823-9399-aff249e57eaa.webp)
+      order: 4
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: ezrmblfgxc
+      name: Path
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Fields](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/90295012-ff02-43f8-8876-a7416567bb55.webp)
+      order: 5
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: ydagvxdffm
+      name: Crossroad
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Forest Crossroad](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/f7823af0-fa96-4214-b68b-6ca7919a4e7a.webp)
+      order: 6
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: zsbnvdqgud
+      name: Gorklin Bridge
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Gorklin Bridge](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/69240b14-6139-4a9d-83c8-3ccf1628199a.webp)
+      order: 7
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    - id: trwbwludqv
+      name: Log Camp
+      shared_name: 
+      status: 1
+      blurb: >-
+        # $[objectname]
+
+
+        ![Log Camp](https://content.encounterkit.com/cdn-cgi/image/width=3840,quality=75,format=auto/https://content.encounterkit.com/map/preview/large/c45bd59e-c6c6-4b6a-a9d9-79ee0660a0be.webp)
+      order: 8
+      notes: []
+      chapters:
+      - tnjnmuwest
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: location
+    statblock: 
+    subtype: location
+  - id: mahfttrhup
+    name: Overview
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/JobWS.png)
+    order: 4
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: jtqempycmm
+    name: Charakter Overview
+    shared_name: 
+    status: 1
+    blurb: >
+      # $[objectname]
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/CharacterOverview.png)
+    order: 5
+    notes: []
+    chapters:
+    - zyapjpemyy
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: jkngslwlqf
+    name: Charactersheet
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ## Caspia
+
+      - **MacGuffin:** Schreibgeder, Familienemblem
+
+      - **Notizen im Hintergrund:** Infos zum Artefakt
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/CaspiaCharactersheet.png)
+
+
+
+      ## Vanessa
+
+      - **MacGuffin:** Geflickter Dagger, Münzen
+
+      - **Notizen im Hintergrund:** Infos zu Hinterhalt am Tor
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/VanessaSheet.png)
+
+
+      ## Loraviel
+
+      - **MacGuffin:** Apfel
+
+      - **Notizen im Hintergrund:** Infos zu Mission
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/LoravielSheet.png)
+    order: 6
+    notes: []
+    chapters:
+    - zyapjpemyy
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: leythcltjy
+    name: Charakterinterview
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ## Caspia
+
+      _Fragen in @[](ebupyvqypr)_
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/CaspiaInterview.png)
+
+
+      ## Vanessa
+
+      _Fragen in @[](bwgckdbypc)_
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/VanessaInterview.png)
+
+
+      ## Loraviel
+
+      _Fragen in @[](njnrsscgba)_
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/LoravielInterview.png)
+    order: 7
+    notes: []
+    chapters:
+    - zyapjpemyy
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: wgjrfmyhxx
+    name: Overview Map
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/MapPage.png)
+    order: 8
+    notes: []
+    chapters:
+    - tzncewqrfv
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: xjqjgmhpls
+    name: Example Entry
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/KazargaardEntry.png)
+    order: 9
+    notes: []
+    chapters:
+    - tzncewqrfv
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: wbtvjahtjd
+    name: Overview Journal
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/JournalOpenWS.png)
+    order: 10
+    notes: []
+    chapters:
+    - dytxqlwjbe
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: xpjsrfekra
+    name: Journal Example Entry
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/JournalEntryWS.png)
+    order: 11
+    notes: []
+    chapters:
+    - dytxqlwjbe
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: rrbexrkejs
+    name: Overview Monster Compendium
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/MonsterClosedWS.png)
+    order: 12
+    notes: []
+    chapters:
+    - xddyfgqrcc
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: ctwrgedkly
+    name: Monster Compendium
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/MonsterOpenWS.png)
+    order: 13
+    notes: []
+    chapters:
+    - xddyfgqrcc
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: xsylftgxtd
+    name: Monster Example Entry
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/MonsterEntryWS.png)
+    order: 14
+    notes: []
+    chapters:
+    - xddyfgqrcc
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+  - id: zmskchbnms
+    name: Newspaper
+    shared_name: 
+    status: 1
+    blurb: >-
+      # $[objectname]
+
+
+      ![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/JobOpenWS.png)
+    order: 15
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: location
+- id: ulryefksuf
+  objects: []
+- id: upfwepumnw
+  objects:
+  - id: ebupyvqypr
+    name: Caspia
+    shared_name: 
+    status: 0
+    blurb: "# $[objectname]\n![Caspia](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Characters/CaspiaIdle.png)\n## Information\n**Heritage:** Human </br>\n**Gender:** Female </br>\n**Age:** 19 </br>\n**Role:** Weaver </br>\n**Path:** Arcanist </br>\n\n## Background (short)\n- Caspia is a Weaver from Moonhaven. \n- She stated she came to Kazagaard on the search for a friend of hers. \n- She seems to be able to cast simple spells with ease\n- She's carrying the box and was able to see the dark power\n- seems a bit arrogant/pampered\n- Nice clothes\n\nPowdered face, gold embroidery and a hint of arrogance in the voice ...  Caspia is a Weaver from Moonhaven. As that she seems to be able to cast simple spells with ease. That goes for the physical component as she seems very distraught/against harming living beings. She carries a lot in her belt but most importantly a journal she digs her nose into as soon as the campfire ignites and the mysterious box, an ancient artefact so it seems, that the party got tasked to protect. She freaks out easily but seems surprisingly good at handling herself.\n\n## Special Skill Proficiencies\n- Basic Magic Incantations\n- Meteorology\n- Horse Riding\n\n## Personality\n#### Quote\n> \"I get bitter if I'm not the center of attention.\"\n\n> \"If you cant articulate yourself I'll do it for you.\"\n\n> \"If youre my friend, there's nothing I won't do.\"\n\n\n## Icon\n\n#### color\n![CaspiaIcon](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/CaspiaIcon.png?raw=true)\n\n#### grey\n![CaspiaIconGrey](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/CaspiaIconGrey.png?raw=true)\n\n## Interview\n\n#### What Gods do you believe in?\n###### Track: CaspiaGods\nWell I do believe in all gods I would say. At least all in the pantheon we follow. But the one I pray to is Anfang, mother of all magic and knowledge. Her symbol are the stars, which you can see all over my outfit. Obviously. I just love her teachings. She’s all for knowledge, everyone should have the same chance to gain it. It should be open. It is a great believe and it’s open to all mindsets and opinions. Because in the great scheme of things all the mentioned opinions are necessary and yeah… I like that I’d say. \n\n\n#### What is your Position?\n###### Track: CaspiaPosition.mp3\nWell I was told to keep it short so my position is yet a student. I have not yet mastered my studies, so I am not a master of my craft right now. But I’m getting there and I’d say I’m already quite far and good at it. \n\n#### What were you doing in the Temple?\n###### Track: CaspiaReasonTemple.mp3\nI was having a chat with Priester Jack in there. The matters of the conversation are private, but it was just luck for me to be there at the right time. Well luck as in: I would not have survived this outside of the temple probably, without the help of the others so yeah. That was what I was doing in the temple. Just hoping for a safe spot but apparently that’s not a thing in Kazargaard. \n\n\n\n#### Which of your traits do you think will help the most on your Journey?\n###### Track: CaspiaHelpfulSkills.mp3\n\nI would say my knowledge and rationalism. I’m quite good in severe situations. I was not good at containing the fear and the panic before. It takes a bit of time to get used to blood and certain death, but I think for that I’m handling quite well and in near death fighting situations it is not bad to be able to just dissociate ab it from the matter at hand and find the most reasonable facts. Even though I still hope someone would do that but if no one else does it I will. \n\n#### What's your fighting experience and what was the first fight as a group like?\n###### Track: CaspiaFirstFight.mp3\nI do not in fact have any fighting experience so far and I was hoping to keep it that way but well… The first fight as a group was scary. I wish we didn’t have to do that and I still cannot believe that we killed those … well they’re monsters, but they’re still living creatures and I’m quite surprised I actually got some magic to work. I think that sums it up. \n\n#### How do you feel about the priest's fate?\n###### Track: CaspiaPriest.mp3\nI… uhm. I feel horrible. I feel like we could have acted differently in the situation. Then again we’re barely adults and we just escaped by a hair. I will include him in my prayers. Loraviel told us it’s our fault to some extent and I don’t think he’s wrong but… we don’t have time to think about that right now otherwise we will not make it further than that. But I’ll make sure he’s not forgotten. \n\n#### What do you think about the Monsters in the south western parts?\n###### Track: CaspiaMonsterActivity.mp3\nI’m not familiar with the habits, nor habitats for that matter of those creatures and I would rather not take assumption without having the necessary background information. But from what I have been told so far it is rather strange for them to be in those parts, especially with the Ashland’s where they apparently come from, being on the other side. And the situation at the gate it’s just… it’s an anomaly. Which is not good I assume. \n\n#### What is your plan to get in Moonhaven?\n###### Track: CaspiaPlan.mp3\nWell help first and foremost. I sure hope they can send some assistance to the people in Kazargaard and the poor farmers outside. I’m certain that they can get the situation under control and to be fair, I cannot wait for a safer place. Just seeing some people and hopefully getting a grasp of the situation. Getting the control back over everything that happened so far. \n\n\n## Personal Questions\n\n#### Why did you leave Moonhaven?\n###### Track: CaspiaLeaveMoonhaven.mp3\nWell I am a scholar after all and you cannot gain knowledge when you just stay in one place. I was trying to find some information and some new pieces for a certain matter, which was unfortunately interrupted by the situation we have at hand now, so I sure which I did not in fact, but here we are. So let’s just go back to it and rethink our life choices. \n\n#### Are you excited to come back home?\n##### CaspiaExitedAboutHome.mp3\nI sure am. I cannot wait to get back home. To get some rest, maybe get a bath and get this gore of and the books and just… forget about everything that has happened on the way so far. But let’s not get ahead of ourselves and contain everything for now. Feels like just keeping everything inside and pushing through, not thinking about it. But it’s gonna be great, gonna be amazing. Everything is going to be great and I cannot wait for it. \n\n\n#### Why are you so scared of fighting when you have that strong magic?\n###### Track: CaspiaScaredToFight.mp3\nWell excuse me for being scared of monsters and swords. How could I? No for real I don’t do fighting magic and the spells I use are not intended for that and I’m quite surprised I did manage to cast magic given how scared I was. So yeah I’m just scared of dying I guess. I do rather like living and I would love to keep it that way.\n\n#### Why do you know attack spells when you don't like to fight?\n##### CaspiaAttackSpells.mp3\n\nWell they’re certainly not by definition. I’m an arcanist and I use magic to describe natural phenomena’s, which does include lightning and energy fluctuations, all that sort of things. I did learn them to of course handle dangerous situations that might occur when dealing with elements and experiments. Not to fight people or harm other living beings, certainly not. But we do learn some basic incantations to get away from dangerous situations. That normally don’t include fight but rather explosions or experiments that go awry… so I did certainly not intend to harm with them, but they do the trick and I plan to keep my friends and myself alive for that matter, so I use them. Simple as that. \n\n\n#### Do you only like scientific books or facts?\n###### Track: CaspiaBooks.mp3\nOh most certainly not. Every book has a right to be there and every story is worth telling. I do love travel books, I love novels, I love all kinds of stories and I think we can find ourselves a lot in the characters and they help to deal us with our issues at hand even if they are fiction. They don’t have to be scientific. Though of course learning requires a certain standard so I cite them a lot, I learn with them but… I do like stories. I would love to be part of one… even though… actually right now? Maybe not. \n\n#### What is Moonhaven like?\n###### Track: CaspiaMoonhaven.mp3\nOh it is simply wonderful. It is stunning. It’s a white City with marble as floors, the people are incredibly nice, it’s a city of knowledge and prosperity. A lot of people, the markets they’re just lovely… yeah it’s a lovely town. Well city and there are still lots of places I don’t know and I haven’t seen yet, so everyday is something new there. \n\n#### Why are you so persistent that you get to carry the box?\n###### Track: CaspiaCarryBox?\nAgain with the chest. Listen I just think it’s the smartest for the magic user to carry the magic artefact. I don’t know what the issue is, I just think I’m the most likely to be able to actually deal with magic or notice it for that matter, if something changes. So yeah I get to have the box. End of discussion. \n\n#### Do you know anything about dark magic or curses on the box?\n##### CaspiaCurses.mp3\nI mean I have learned about curses and dark magic. As a matter of fact it is prohibited in most parts but… yeah you hear of it but you don’t normally use it. Or well are not confronted with it for that matter. But no I do not know anything about the chest and I do not know which curses it entails. So yeah I don’t know. \n\n#### Why are you so scared to open the box?\n###### Track: CaspiaOpenBox.mp3\nHave you ever heard of the box of Pandora? Or any magic artefacts that had something good happen to the people that opened them? Because I certainly did not. And I am not meddling with it, without knowing the background or what it entails, what’s in there. I would rather leave it to the people that actually know what they’re doing and have studied and learned about it. Thank you very much, I am not getting in the middle of that. No. \n\n#### Are people born with magic or can you learn it?\n###### Track: CaspiaLearnMagic.mp3\nI would say you need a certain talent, yes unfortunately. But I like to believe that everyone can learn it as long as they’re persistent and determined enough. There are lots of means to acquire magical knowledge and studying is the first step. You never stop to learn so there is no reason you cannot start in my opinion. \n\n#### Where did you learn to cast magic?\n###### Track: CaspiaUniversity.mp3\nI studied in Moonhaven at my university and I am still quite at the beginning of it. Well you never stop learning do you? Especially with magic, you can never learn all of it I assume and it is important to just keep learning. The basics are taught at the university. So it’s a good place to start. Why do you wanna learn magic as well? I’m sure we can find a spot for you. \n\n#### Is magic common in these parts?\n###### Track: CaspiaMagicCommon.mp3\nWell it is not in the general area and certainly not in Vormistrya, where we are right now. It is common in the place where I am from, well, which is a university for magic, so… I am probably the wrong person to ask as a reference for that. I assume not the way people react to it. \n\n#### Are there more schools of magic or even forbidden ones?\n###### Track: CaspiaSchoolsOfMagic.mp3\nWell I could talk days about this topic! But I have been told that that is not as interesting for every person as it is for me. So the short answer is: there are four schools in Nexor, which include elemental, mind, light and hedge magic. All have different focuses. There are forbidden disciplines of magic yes. You should not meddle with them first and foremost and leave it to the people that know what they’re doing and try to explain them. But naturally nothing good comes of it most of the time. So we try to steer clear of that. I think that sums it up. \n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n"
+    order: 1
+    notes: []
+    chapters: []
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: npc
+  - id: bwgckdbypc
+    name: Vanessa
+    shared_name: 
+    status: 0
+    blurb: >
+      # $[objectname]
+
+      ![Vanessa](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Characters/VanessaIdle.png)
+
+      ## Information
+
+      **Heritage:** Human </br>
+
+      **Gender:** Female </br>
+
+      **Age:** 19 </br>
+
+      **Role:** Rogue </br>
+
+      **Path:** Mountebank </br>
+
+
+      ## Background (short)
+
+      Rugged, sharp-eyed, and perpetually disheveld, Vanessa is a rogue with quick fingers and a quicker wit. She seems to be able to crack any lock with ease and her silver tongue can talk her way out of almost anything. Beneath the grime and bravado, though lies an undenieable charm. She's surprisingly kind when it matters, her gruff demeanor masking a heart big enough to occasionally do the right thing (though she would never admit it)
+
+
+      ## Special Skill Proficiencies
+
+      - Lockpicking
+
+      - Kazargaard Streets
+
+      - Scouting
+
+
+
+      ## Personality
+
+      #### Quote
+
+      > "Money get you further than trust."
+
+
+      > "Sure we're friends! If you're of use for me that is."
+
+
+      > "As long as they like you, they won't betray you."
+
+
+      ## Icon
+
+
+      #### color
+
+      ![VanessaIcon](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/VanessaIcon.png?raw=true)
+
+
+      #### grey
+
+      ![VanessaIconGrey](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/VanessaIconGrey.png?raw=true)
+
+
+
+      ## Interview
+
+
+      #### What Gods do you believe in?
+
+      ###### Track: VanessaGods
+
+
+      None I think the gods have forsaken us a little bit, they’ve never been there. But sometimes I pray to the lady of luck.
+
+
+
+      #### What is your Position?
+
+      ###### Track: VanessaPosition.mp3
+
+      I’m a mailman and town crier for the craftsman’s guild and I would say I’m pretty good at it.
+
+
+      #### What were you doing in the Temple?
+
+      ###### Track: VanessaReasonTemple
+
+      I was just chilling. I really like the atmosphere in there, it’s a warm place especially on a rainy day like this. You know usually I enjoy the lights in there, but yeah even though I don’t really believe in the gods … well I don’t pray to the gods, it’s nice to sit there for a while.
+
+
+
+      #### Which of your traits do you think will help the most on your Journey?
+
+      ###### Track: VanessaHelpfulSkills
+
+
+      My honesty, I think is a good thing. My selflessness. I’m a pretty helpful person I think and I protect my friends.
+
+
+      #### What's your fighting experience and what was the first fight as a group like?
+
+      ###### Track: VanessaFirstFight
+
+      None. Our first fight was accelerating. I was not expecting it to turn out that well. That was actually pretty great.
+
+
+      #### How do you feel about the priest's fate?
+
+      ###### Track: VanessaPriest
+
+      It’s really unfortunate that he had to go, but we tried everything we could and it wouldn’t have helped anyone if we had died on that roof as well. 
+
+
+      #### What do you think about the Monsters in the south western parts?
+
+      ###### Track: VanessaMonsterActivity
+
+      I don’t know maybe they live there. I didn’t think that that was a thing that they do, but apparently they are. That’s not something good. 
+
+
+      #### What is your plan to get in Moonhaven?
+
+      ###### Track: VanessaPlan
+
+      I wish I had one. I think getting to safety with my new friends and help actually. I need to make sure, that the people in Karzargaard are safe. 
+
+
+      ## Personal Questions
+
+
+      #### Kazargaard is a city of criminals. How did you get there??
+
+      ###### Track: VanessaWhyKazargaard
+
+      Uhm well, when two people really like each other, sometimes they have a child. And that child is me. I was born there.
+
+
+
+      #### What is it that you do exactly?
+
+      ###### Track: VanessaWork
+
+      Uhm like I said I’m a mail person and a hawker or town crier for the craftsman’s guild. It’s not much but it’s a living.
+
+
+      #### How do you know the way over the rooftops?
+
+      ###### Track: VanessaStreetKnowledge.mp3
+
+      Well as Kazargaards fastest post person, I of course know all the shortcut’s in the city. 
+
+
+      #### Where in Kazargaard do you live?
+
+      ###### Track: VanessaHome.mp3
+
+      Wow, wouldn’t you like to know.
+
+
+      #### Who was the man you found dead ?
+
+      ###### Track: VanessaCedric.mp3
+
+      He was an acquaintance of mine . Let’s not talk about that. 
+
+
+      #### What was that place you showed the others?
+
+      ###### Track: VanessaHideout.mp3
+
+      Oh just like a secret hideout for …you know… it’s kind of a fun thing that we do, but that doesn’t matter right now.
+
+
+      #### You leave in such a dangerous place, why are you scared to fight?
+
+      ###### Track: VanessaScaredToFight.mp3 
+
+      Well I think fear is a very natural reaction. I live in Kazargaard and of course it’s not the nicest city, but it’s not a particularly dangerous place usually. Most people here don’t know how to fight. There’s smiths and workers mainly. Miners. Non of us have battle training, why would we? Well if we’re not guards. 
+
+
+
+      #### Do you think running away will get you far ?
+
+      ###### Track: VanessaRunningAway.mp3
+
+      Yes actually. I believe I can survive longer by running away from a fight than dieing in it. 
+
+
+      #### I heard you like stories?
+
+      ###### Track: VanessaStories.mp3
+
+
+      Of course, who doesn’t? I mean stories are fantastic, you get to experience things that you would not otherwise and … the hero never dies in stories. 
+
+
+
+      #### Why are you able to use the sling so well?
+
+      ###### Track: VanessaSling.mp3
+
+      Well I did say that I have no combat experience, but you know, you do learn some little tricks and stuff. I mean I was a kid as well and that stuff is fun. You know hitting targets and stuff?
+
+
+      #### Why did you help the others?
+
+      ###### Track: VanessaHelpGroup.mp3
+
+      Why did I help the others? Well of course I helped the others! I couldn’t just have let them die in there, that would’ve been horrible. I would be a horrible person. I think it’s natural!
+
+
+      #### What's life in Kazargaard like?
+
+      ###### Track: VanessaLifeInKazaargard.mp3
+
+      Oh shit. I mean the city is full of piss and ash, but there’s some nice moments. We get to enjoy life. 
+
+
+
+      #### What is your job like?
+
+      ###### Track: VanessaDayInMyJob.mp3
+
+      Oh yeah it’s stressful. I mean I get around a lot, I get to meet different sorts of people. I mean usually they don’t really pay attention to me, I just deliver the mail and I do know all the gossip and things that I will never afford, so that’s fun oh yeah. 
+    order: 2
+    notes: []
+    chapters: []
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: npc
+  - id: njnrsscgba
+    name: Loraviel
+    shared_name: 
+    status: 0
+    blurb: >
+      # $[objectname]
+
+      ![Loraviel](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Characters/LoravielIdle.png)
+
+      ## Information
+
+      **Heritage:** Elf </br>
+
+      **Gender:** Male </br>
+
+      **Age:** 24 (ask) </br>
+
+      **Role:** Priest  </br>
+
+      **Path:** Paladin </br>
+
+
+      ## Background (short)
+
+      "May Kolia protect you!
+
+
+      Loraviel is a compact, golden-haired elf with a gleaming sword and an earnest smile. His polished armor and sturdy shield mark him as a protector, always the first to step into danger to defend others. Strong and selfless, Loraviel is the heart of the gorup, though his inexperience and trusting nature sometimes leave his allies questioning their life choices."
+
+
+      ## Special Skill Proficiencies
+
+      - Monster Knowledge
+
+      - Battle Tactics
+
+      - Healing
+
+
+      ## Personality
+
+      #### Quote
+
+      > "I'll save every person that needs help."
+
+
+      > "The best way to deal with danger is diving in head first."
+
+
+      > "What do you mean you can't keep up?"
+
+
+      ## Icons
+
+
+      #### color
+
+      ![LoravielIcon](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/LoravielIcon.png)
+
+
+      #### grey
+
+      ![LoravielIconGrey](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/LoravielIconBW.png)
+
+
+      ## Interview
+
+
+      #### What Gods do you believe in?
+
+      ###### Track: LoravielGods
+
+      I believe in Kolia.
+
+
+
+
+
+      #### What is your Position?
+
+      ###### Track: VanessaPosition.mp3
+
+      Well I hope I'm getting that right but I think my position is Paladin? Well I hope that I'm a Paladin haha. So my Position in the group is the Paladin.
+
+
+      #### What were you doing in the Temple?
+
+      ###### Track: LoravielReasonTemple
+
+      Well, I was looking for Sir Henrick-Arthum, but he wasn't there at the moment, when I arrived.
+
+
+
+      #### Which of your traits do you think will help the most on your Journey?
+
+      ###### Track: LoravielHelpfulSkills
+
+      Well I think that the thing that helps me the most is, that I'm fairly open to anybody and try to help everybody. So for me, it's not that hard to ...know how others feel and try to help them and I think that is a character trait that helps me on my journeys. Well also in fights my combat experience is more or less something, that keeps me alive and this is also a feat that helps us on our journey.
+
+
+
+
+
+      #### What's your fighting experience and what was the first fight as a group like?
+
+      ###### Track: LoravielFirstFight
+
+      Well I have enough fighting experience to fight against most enemies and I was trained by a paladin, so I think I'm pretty good at combat. But our first fight as a group was more or less chaos. All of us were just doing our stuff, we didn't have a formation or tactics how to attack. We didn't have a frontline who would go up against the enemies and the others stayed in the back and tried to fight as long range characters. And it was a little bit messy but in the end we managed to kill the enemies. I know the girl that we tried to saved died but overall WE didn't die. This is the first step of succeeding right?
+
+
+
+      #### How do you feel about the priest's fate?
+
+      ###### Track: LoravielPriest
+
+      Well when he died I was shocked because it was an unnecessary death and I think we could save him, but in the end I hope that his soul went up to Kolia and lives in peace with him now. I hope the best for him but still I'm sad that he had to go this early.
+
+
+
+
+      #### What do you think about the Monsters in the south western parts?
+
+      ###### Track: LoravielMonsterActivity
+
+      I'm pretty curious why they went down so low in the parts, because they are coming from the north and it's quite far from there. But still it makes sense. I think they want to overrun the whole country. But if it's true that they only want to overrun Kazargaard, then I think it's strange that they also went to other places, but yeah if they want to overrun the whole country than it totally make sense that they are also in the southern west parts.
+
+
+
+      #### What is your plan to get in Moonhaven?
+
+      ###### Track: LoravielPlan
+
+      That is quite easy to answer. It is help, because we have a chest and we dont know what's inside and somebody can or could help us in Moonhaven. So this is what I hope to get in Moonhaven.
+
+
+
+      ## Personal Questions
+
+      #### You're from Moonhaven?
+
+      ##### Source: LoravielGroupFleeing
+
+      Yes I'm from Moonhaven and I currently live there.
+
+
+      #### Elves are not that common in these parts are they?
+
+      ##### Source: LoravielGroupFleeing
+
+      No elves are not really common. But they aren't common anywhere in the land, because they were cursed and that's the reason why there are only a few left.
+
+
+      #### Do you think you can protect the other two and the chest?
+
+      ##### Source: LoravielGroupFleeing
+
+      Well... sometimes it could be hard, but in general I think I will manage to protect all of them.
+
+
+
+      #### Do you think you're on the right path?
+
+      ##### Source: LoravielGroupFleeing
+
+      Well I hope, that I'm on the right path and I'm following my steps and... well try to do what Kolia would like me to do. But in general I think I'm on the right path, yes.
+
+
+      #### Why are you so open about your past?
+
+      ##### Source: LoravielGroupFleeing
+
+      Well why should I be closed about it? For me it's totally fine to tell somebody about my past. It's part of me and if I can connect to them with my past, than it's totally fine to tell them.
+
+
+      #### What happened in your past exactly?
+
+      ##### Source: LoravielGroupFleeing
+
+      In general: My parents died and I got saved by a holy warrior of Kolia, a Paladin and he became my master and raised me as his own son.
+
+
+
+      #### What was your mission?
+
+      ##### Source: LoravielGroupFleeing
+
+      Well my mission was to get information about the Ashlands and the creatures, because in the temple of Kolia there were rumors going around that the Ashlands were... like grouping up and forming armies of creatures. So I was sent to Kazargaard to get information from Sir Henrick-Arthum because he said that he has information but when I arrived, he wasn't there.
+
+
+      #### Who was the Paladin that saved you?
+
+      ##### Source: LoravielGroupFleeing
+
+      Well I don't want to spoil his name, but he's like a father figure for me. He was... I don't know he knew me my whole life. I  
+
+      was 5, when I lost my parents and since then he raised me as his own child, trained me in the skills of a paladin and brought me closer to Kolia
+
+
+      #### What do you think about the others constantly fleeing?
+
+      ##### Source: LoravielGroupFleeing
+
+      Well it's totally fine. I can't blame somebody, who's afraid of a fight and it's a normal reaction for somebody who isn't trained in fighting. But sometimes it's getting hard if you get blamed for fighting for others, only because your group wants to flee, but you want to be on the right path and help others who are in danger. But still I can't blame them for fleeing sometimes.
+
+
+      #### Why did you become a Paladin?
+
+      ##### Source: LoravielGroupFleeing
+
+      Well that's quite easy. Because my master trained me and raised me as paladin because he was a paladin by himself.
+
+
+      #### How does one become a Paladin?
+
+      ##### Source: LoravielGroupFleeing
+
+      Well that's fairly easy as long as you have a master who has the will to train you. He will raise you more or less for a couple of years and teach you all the skills you need to become a paladin. And after some years you have like a ceremony where you get all your stuff you need, to be a paladin. And this is more or less how you become a paladin so it's just the training that you have to go through.
+
+
+
+      #### Do you know a lot about those monsters?
+
+      ##### Source: LoravielGroupFleeing
+
+      Well I studied a lot of them and read a lot  about monsters. But I haven't fought most of them. I don't have combat experience but I know a lot facts, smaller details, maybe weak points if there are already known. And this is what I know about these monsters.
+
+
+      #### Do you get any magical abilities as a Paladin?
+
+      ##### Source: LoravielGroupFleeing
+
+
+      Well no, I hope of the guidance of Kolia and  can perform ...like  divine strikes or something like that, that are effective against the creatures because I want to ban them. But in general I can't use magic like Caspia could.
+
+
+      #### How does one become a paladin?
+
+      ###### Track: LoravielBecomePaladin.mp3
+
+      Well that's fairly easy as long as you have a master who has the will to train you. He will raise you more or less for a couple of years and teach you all the skills you need to become a paladin. And after some years you have like a ceremony where you get all your stuff you need, to be a paladin. And this is more or less how you become a paladin so it's just the training that you have to go through.
+
+
+      #### Do you get any magical abilities as a paladin?
+
+      ###### Track: LoravielPaladinAbilities.mp3
+
+      Well no, I hope of the guidance of Kolia and can perform ...like divine strikes or something like that, that are effective against the creatures because I want to ban them. But in general I can't use magic like Caspia could.
+
+
+      #### What gods do you believe in?
+
+      ###### Track: LoravielGods .mp3
+
+      I believe in Kolia.
+
+
+      #### What is your position?
+
+      ###### Track: LoravielBecomePaladin.mp3
+
+      Well I hope I'm getting that right but I think my position is Paladin? Well I hope that I'm a Paladin haha. So my Position in the group is the Paladin.
+
+
+      #### What were you doing in the temple?
+
+      ###### Track: LoravielBecomePaladin.mp3
+
+      Well I was looking for Sir Hendrick Arthum but he wasn't there at the moment I arrived.
+
+
+      #### Which of your traits will help you most on your journey?
+
+      ###### Track: LoravielHelpfulSkills.mp3
+
+      Well I think that the thing that helps me the most is, that I'm fairly open to anybody and try to help everybody. So for me, it's not that hard to ...know how others feel and try to help them and I think that is a character trait that helps me on my journeys. Well also in fights my combat experience is more or less something, that keeps me alive and this is also a feat that helps us on our journey.
+
+
+      #### What is your fighting experience and what was the first fight as a group like?
+
+      ###### Track: LoravielBecomePaladin.mp3
+
+
+      #### How do you feel about the priest fate.
+
+      ###### Track: LoravielBecomePaladin.mp3
+
+      Well when he died I was shocked because it was an unnecessarily death and I think we could save him. But in the end I hope that his soul went up to Kolia and lives in peace with him now. I hope the best for him but still I'm sad that he had to go this early.
+
+
+
+
+      #### What do you think about the monsters in the south western parts.
+
+      ###### Track: LoravielBecomePaladin.mp3
+
+      I'm pretty curious why they went down so low in the parts because they are coming from the north and it's quite far from there. But still it makes sense. I think they want to overrun the whole country. But if it's true that they only want to overrun Kazargaard, then I think it's strange that they also went to other places but yeah if they want to overrun the country than it totally make sense that they are also in the southern west parts.
+
+
+      #### What is your plan to get in Moonhaven?
+
+      ###### Track: LoravielBecomePaladin.mp3
+
+      That is quite easy to answer. It is help, because we have a chest and we dont know what's inside and somebody can or could help us in Moonhaven. So this is what I hope to get in Moonhaven.
+    order: 3
+    notes: []
+    chapters: []
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: npc
+  - id: kvtcwuochw
+    name: Player
+    shared_name: 
+    status: 0
+    blurb: >
+      # $[objectname]
+
+
+      - new to world
+
+      - doesn't know characters yet
+    order: 4
+    notes: []
+    chapters: []
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: npc
+  - id: mcekaaxtum
+    name: Game Director
+    shared_name: 
+    status: 0
+    blurb: >
+      # $[objectname]
+
+
+      - tells the story
+
+      - Character scribble ideas: Dragon Skull from Logo
+
+
+      ## Logo
+    order: 5
+    notes: []
+    chapters: []
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: npc
+  - id: tlaimgnwhs
+    name: Vri-Mor
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      Standing about 2 meters tall, a Vri-Mor is a sinister humanoid entity wielding the terrifying power of mind control. Its form is vaguely humanoid but seems to flicker and shift, as if reality itself recoils from its presence. Usually wearing tattered black robes that seem to move on their own accord and blend into the darkness, the creature floats slightly above the ground when walking. The creature has a face made of chitinous black substance with sharp teeth and a pointy chin. The eyes beneath its hood glow with an otherworldly intensity, piercing through the darkness with an unnerving gaze that seems to probe the depths of one's soul. The Vri-Mor can unleash waves of psychic energy, crushing the minds of its opponents with a mental onslaught that leaves them paralyzed with agony. Its telepathic abilities extend beyond mere assault, delving into the darkest recesses of the subconscious to unravel the deepest fears and desires of its victims. Those who dare to face the Vri-Mor find themselves ensnared in a nightmarish labyrinth of psychic torment, where reality bends to the will of this malevolent entity. Vri-Mor often serve as powerful servants of the eldrak'thar, taking on the roles of assassins and special agents to carry out the bidding of these rulers of darkness.
+    order: 6
+    notes: []
+    chapters:
+    - xddyfgqrcc
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: npc
+  - id: dgppvlstev
+    name: Gorklin
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      Gorklins are evil hateful little creatures that come from the twisted and mysterious Ashlands. They look something like a miniature orc, but with a lizard-like tail. Their skin tones are varying shades of gray, with a leathery texture. Their hair and eyes are also a dull gray, and the eyes do not betray very much intelligence. These pitiable creatures are the lowest rank of the Ashlander troops and tend to be oppressed and ill used by the vaazirs. They aren't very strong, are cowardly, and are opportunists in fights. In gorklin society, such as it is, the strong oppress the weaker, a very "survival of the fittest" ethos. As they are bullied by the troops above them, so do they bully each other relentlessly. Individually, a gorklin is very little threat, but in groups, especially directed by a vazzir, they are quite dangerous.
+    order: 7
+    notes: []
+    chapters:
+    - xddyfgqrcc
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: npc
+  - id: vuohmfhoys
+    name: Vaazir
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      Vaazirs are the sinister foot soldiers of the Ashlands, loyal servants of the eldrak'thar. Standing almost as tall as humans but generally with a more muscular build, vaazirs possess a grotesque, goblin-like appearance with leathery gray skin, jagged teeth, and black eyes. Clad in crude armor and armed with brutal weapons, they march in armies under the command of their masters, instilling fear and chaos wherever they tread. Renowned for their ferocity in battle, their military discipline, their fighting skills from years of training and unwavering loyalty to the eldrak'thar, the vaazirs are bred for war and they are a constant threat to any territory bordering the Ashlands.
+    order: 8
+    notes: []
+    chapters:
+    - xddyfgqrcc
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: npc
+- id: hnkokhujew
+  objects:
+  - id: svavhmljlx
+    name: interview the Characters
+    shared_name: 
+    status: 0
+    blurb: >+
+      # $[objectname]
+
+    order: 1
+    notes: []
+    chapters:
+    - zyapjpemyy
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: primaryquest
+  - id: fmfckpuabv
+    name: explore kazargaard
+    shared_name: 
+    status: 0
+    blurb: >+
+      # $[objectname]
+
+    order: 2
+    notes: []
+    chapters:
+    - tnjnmuwest
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: primaryquest
+  - id: mrokkaqfgc
+    name: enter the interactive tour
+    shared_name: 
+    status: 0
+    blurb: >+
+      # $[objectname]
+
+    order: 3
+    notes: []
+    chapters:
+    - tzncewqrfv
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: primaryquest
+  - id: lyjoyblbqn
+    name: watch the trailer for season 2
+    shared_name: 
+    status: 0
+    blurb: >+
+      # $[objectname]
+
+    order: 4
+    notes: []
+    chapters:
+    - tzncewqrfv
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: primaryquest
+  - id: xqgasfdpcu
+    name: listen to caspias journal entry
+    shared_name: 
+    status: 0
+    blurb: >+
+      # $[objectname]
+
+    order: 5
+    notes: []
+    chapters:
+    - dytxqlwjbe
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: primaryquest
+  - id: ulygelznmy
+    name: learn about the monsters
+    shared_name: 
+    status: 0
+    blurb: >+
+      # $[objectname]
+
+    order: 6
+    notes: []
+    chapters:
+    - xddyfgqrcc
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: primaryquest
+  - id: nmdafxbxdy
+    name: apply (please)
+    shared_name: 
+    status: 0
+    blurb: >+
+      # $[objectname]
+
+    order: 7
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: primaryquest
+- id: gfxlflwybm
+  objects:
+  - id: xddbqdmchg
+    name: Newspaper
+    shared_name: 
+    status: 0
+    blurb: >
+      # $[objectname]
+
+
+      ## Text
+
+      ![NewspaperBackdrop](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/NewspaperBackdrop.png?raw=true)
+
+
+      ## Blank
+
+      ![NewspaperBackdropBlank](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/NewspaperBackdropBlank.png?raw=true)
+    order: 1
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: glbujgacgu
+    name: NewspaperClosed
+    shared_name: 
+    status: 0
+    blurb: >
+      # $[objectname]
+
+      ## Text
+
+      ![NewspaperClosed](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/NewspaperClosed.png?raw=true)
+
+
+      ## Blank
+
+      ![NewspaperClosedBlank](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/NewspaperClosedBlank.png?raw=true)
+    order: 2
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: ktwuzxrqyp
+    name: Ad's
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ## Post Production
+
+      ![PostProductionAd](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/PostProductionAd.png?raw=true)
+
+
+      ## Player
+
+
+      ![PlayerAd](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/PlayerAd.png?raw=true)
+
+
+      ## Director
+
+      ![DirectorAd](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/DirectorAd.png?raw=true)
+
+
+      ## Social Media
+
+      ![SocialMediaManagerAd](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/SocialMediaManagerAd.png?raw=true)
+
+
+      ## Unsolicited Application
+
+      ![UnsolicitedApplicationAd](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/UnsolicitedApplicationAd.png?raw=true)
+    order: 3
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: lgyrmsehgj
+    name: Ashland Article
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ## Text
+
+      ![AshlandArticle](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/AshlandArticle.png?raw=true)
+
+
+      ## Text
+
+      ![AshlandArticleClosed](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/AshlandArticleBlank.png?raw=true)
+    order: 4
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: bdtcphjyaj
+    name: Letter in Background
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ## Text
+
+      ![Letter](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/Letter.png?raw=true)
+
+
+      ## Blank
+
+      ![LetterBlank](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/LetterBlank.png?raw=true)
+    order: 5
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: tzctjwgnqw
+    name: Character Image
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ![ValrimByFrejaOldrup](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/Valrim%20portrait%20for%20wanted%20poster.PNG?raw=true)
+    order: 6
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: gkkqapaxxb
+    name: Adventurers Image
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ![AdventurersByFrejaOldrup](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/AdventurersSewerBW.PNG?raw=true)
+    order: 7
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: zpfvqlsqov
+    name: Hunter Image
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ![HunterByFrejaOldrup](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/JobPage/Hunter%20by%20Freja%20Oldrup.PNG?raw=true)
+    order: 8
+    notes: []
+    chapters:
+    - hewpmurvps
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: lnwdxuhpxj
+    name: Menu
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+
+      ![MenuClosed](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/MenuClosed.png?raw=true)
+    order: 9
+    notes: []
+    chapters: []
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children:
+    - id: ohgnpdzrdt
+      name: First Dropdown
+      shared_name: 
+      status: 0
+      blurb: >-
+        # $[objectname]
+
+
+
+
+        ![MenuFirstDropDown](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/FirstDropDown.png?raw=true)
+      order: 1
+      notes: []
+      chapters: []
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: information
+    - id: quhyudgcmq
+      name: Second Dropdown
+      shared_name: 
+      status: 0
+      blurb: >-
+        # $[objectname]
+
+
+        ![MenuSecondDropDown](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/SecondDropDown.png?raw=true)
+      order: 2
+      notes: []
+      chapters: []
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: information
+    - id: kjdwnwvlst
+      name: Third Dropdown
+      shared_name: 
+      status: 0
+      blurb: >-
+        # $[objectname]
+
+
+
+        ![MenuThirdDropDown](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/ThirdDropDown.png?raw=true)
+      order: 3
+      notes: []
+      chapters: []
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: information
+    - id: uwayxpsfkl
+      name: Open Questboard
+      shared_name: 
+      status: 0
+      blurb: >-
+        # $[objectname]
+
+
+
+        ![MenuPopUpQuestboard](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/Questboard.png?raw=true)
+      order: 4
+      notes: []
+      chapters: []
+      consumables: []
+      shared: true
+      access_roles: []
+      primaryid: 
+      prominence: 
+      alias: 
+      children: []
+      statblock: 
+      subtype: information
+    statblock: 
+    subtype: information
+  - id: kpurghfvfq
+    name: Close Icon
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ![Cross](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/Cross.png?raw=true)
+    order: 10
+    notes: []
+    chapters: []
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: winbglptos
+    name: Pfeil
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+
+      ![Arrow](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/Arrow.png)
+    order: 11
+    notes: []
+    chapters: []
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: bayqrbciuv
+    name: Monster List
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ## Locked
+
+      ![LockedMonsterList](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/MirroredLockedMonsters.png?raw=true)
+
+
+      ## Gorklin
+
+      ![Gorklin](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/Gorklin.png?raw=true)
+
+
+      ## Vaazir
+
+      ![Vaazirt](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/Vaazir.png?raw=true)
+
+
+      ## Vri-Mor
+
+      ![Vri-Mor](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/VriMor.png?raw=true)
+    order: 12
+    notes: []
+    chapters:
+    - xddyfgqrcc
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: kcmyxznavb
+    name: Book
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ## Book
+
+      ![BookByCzepeku](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/BookAssetShadow.png?raw=true)
+
+
+      ## Book Pages
+
+      ![BookPagesByCzepeku](https://github.com/nookyroo/EoDGamified/blob/main/EchoesOfDiscordiaGamified/Images/Assets/BookWoFrame.png?raw=true)
+    order: 13
+    notes: []
+    chapters:
+    - xddyfgqrcc
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: lzunjasysg
+    name: Caspia Journal
+    shared_name: 
+    status: 0
+    blurb: >+
+      # $[objectname]
+
+
+      Dear Reader, I welcome you to a journal of mine and to accompany us on our journey. since my last book was slowly reaching the limit of it’s capacity I assumed it was rather necessary to start a new one to not miss important facts. After all this story is of utter importance and might even be the source for tales of heroes in future times. Now. we shall start this by us entering kazargaard. And by Ash I mean myself and the other two on separate matters upon entering the town. I can say that it is most discouraging people are sleeping on the ground and it smells like various excrements. I caught some weird glances here in there and the entirety of the town is covered in dirt (at least I hope that’s it). I found myself in a temple of Kolia, one of the safest places in the town at least of what I assumed. I was talking to a rather lovely priest name jack I barely noticed the figure behind me. It turns out she is a rather dear a friend of mine by now. not long after my arrival a paladin drenched in water entered the temple. He seem to be searching for someone and headed from Moonhaven. Unfortunately, the pleasantries were cut short as a man carrying a chest entered the temple who is heavily injured and he was followed by suitors: monsters from the Ashlands as we were told later and died right on the spot. 
+
+      As his dying, wish he handed over a mysterious chest to our paladin tasking him to protect it with his life. 
+
+
+      We managed to escape by a hair with the help of Vanessa leading us through the rooftops. Well I should take the time now to introduce my companions. My name is caspia dear reader as you might know from the title of this journal. the acquaintance I was lucky enough to make in this temple are called Vanessa a hawker from kazargaard and Loraviel a very skilled Paladin. 
+
+
+      Well back to the story. We managed to flee over the rooftops, the priest following us but unfortunately not making it dying in the attempt to escape. Vanessa lead us to an allegedly safe place but there we found her I don’t know what they were. Let’s call in friends for now. By now the streets were farming with monsters filled to the brim with screams and blood. Dear reader j can only pray the people are alright. 
+
+      After having a close look at the chest, oh my dear reader, if I could only show you the horrific magic that covers this chest. I have not seen anything worse in my entire life. we decided it is best to take it with us and leave Kazagaard once and for all or at least until we solve this mystery. As we made our way to the gate in a quiet moment we noticed they were open now. I am not a guard of the city nor do I live here but it did seem strange giving the circumstances. against our better judgement We passed the gate and were greeted by a horrific monster. A vri -mor  as Loraviel called it. It greeted us strange enough while we’re not sure yet if it actually greeted us or the box we carried. It was a battle of minds making a passage since they apparently do have mind controlling powers. I have never heard of anything quite like it which is quite interesting was it not for the severity of this situation. Luckily enough we were saved and escaped. We made it it to a hut on the outskirt of around the town. Where we took a rest for now. This is where I am writing you from. I hope I managed to give this journal to the library myself and it is not a found on another corpse on the way to Moonhaven
+
+
+
+
+
+
+
+      Dear Reader
+
+      We were awoken by horrific scream today. It turned out a farmer girl, tyra her name, was surrounded and ambushed by some of the same monsters that stormed kazargaard the day before. I learned by now that they are called Vazir. We managed to defeat the threat and she let us to her home that people were lovely and were able to rest yet again.  the peace inside the house made you forget the chaos that is outside but unfortunately dear reader it turns out you cannot flea the bloodshead nor can you hide from it and as we awaken all we see is red and the burning scorch of skin on skin. 
+
+
+
+
+      For now I lay down my quill
+
+
+      ## Page 1
+
+      Entry I: The Call to Kazargaard
+
+
+      Dear Reader,
+
+
+      I welcome you to a journal of mine and invite you to accompany us on our journey. Since my last book was slowly reaching the limit of its capacity, I deemed it necessary to start a new one so as not to miss recording important facts. After all, this story is of utter importance and might even become the source of tales of heroes in future times.
+
+
+      Now, we shall start this by recounting our entrance to Kazargaard. By "us," I mean myself and the other two companions who joined me, each arriving separately. I can say that it was most discouraging. The streets were filled with people sleeping on the ground, and the air was thick with the stench of various excrements. I caught some strange glances here and there, and the entirety of the town was covered in dirt (at least, I hope it was dirt).
+
+
+      I found myself in a temple of Kolia, which seemed to be one of the safest places in the town. At least, that was my assumption. There, I spoke with a rather lovely priest named Jack. In my conversation with him, I barely noticed the figure behind me, nearly as dirty as the streets outside, Vanessa, who has since become one of my closest allies and dearest friends. Not long after my arrival, a paladin drenched in water entered the temple. He seemed to be searching for someone and had traveled from Moonhaven, calling himself Loraviel. Unfortunately, our pleasantries were cut short when a heavily injured man carrying a chest stumbled into the temple. He was followed by "suitors", monsters from the Ashlands, as we were later informed, and colapsed right on the spot. With his dying breath, he entrusted the chest to the paladin, Loraviel, tasking him to protect it with his life.
+
+
+      We managed to escape by a hair, thanks to Vanessa leading us over the rooftops. Sadly, the priest, Jack, followed but did not survive the attempt. Vanessa guided us to an allegedly safe place, where we encountered her, let’s call them "friends" for now. By then, the streets were teeming with monsters, filled with screams and blood. Dear reader, I can only pray the townsfolk survived.
+
+
+      After having a closer look at the chest, I must confess, oh, if only I could show you—the horrific magic covering it. It is unlike anything I have ever seen in my life. It was unanimously decided that we should take it with us and leave Kazargaard for good, or at least until this mystery is solved. As we made our way to the city gates, we noticed they were open. Though I am neither a guard nor a resident of the city, it struck me as strange given the circumstances. Against our better judgment, we passed through the gates and were immediately confronted by a horrific monster. A "Vri-Mor," as Loraviel called it. Strangely enough, it seemed to greet us. Whether it addressed us or the chest we carried remains uncertain.
+
+
+      It was a battle of wills to make our passage, as these creatures apparently possess mind-controlling powers. I have never heard of anything quite like it. Were it not for the severity of the situation, I would find its nature fascinating. Fortunately, we escaped and found refuge in a hut on the town’s outskirts, where we now rest.
+
+
+      This, dear reader, is where I write to you from. I hope I can deliver this journal to a library myself and that it does not end up found on a another unnamed corpse somewhere between here and Moonhaven.
+
+
+      Until the next entry,
+
+
+      Caspia
+
+
+      ## Page 2
+
+
+      Entry II: A Scream in the Morning
+
+
+      Dear Reader,
+
+
+      We were awoken today by a horrific scream that pierced the quiet of the early hours. It turned out to be a farmer girl named Tyra, who had been ambushed and surrounded by the same monsters that stormed Kazargaard the day before. By now, I have learned they are called Vazir. 
+
+
+      We managed to defeat the threat, though not without effort. Tyra, grateful for her rescue, led us to her home. Her family and the others there welcomed us with warmth that was a stark contrast to the chaos we had just escaped. The peace inside that humble house made us forget, if only briefly, the horrors lurking outside. For a moment, it felt as though we had found a small sanctuary, a sliver of normalcy amidst the madness.
+
+
+      Unfortunately, dear reader, it turns out you cannot flee from the bloodshed, nor can you hide from it. All we could see was red. The acrid stench of burning flesh in the air and the metallic sound of weapons as reminder that no place is truly safe.
+
+      To a yet uncertain reunion,
+
+
+      Caspia
+
+    order: 14
+    notes: []
+    chapters:
+    - dytxqlwjbe
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: hzlwstrkrj
+    name: Speech Bubble
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ![Arrow](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/SpeechBubble.png)
+    order: 15
+    notes: []
+    chapters:
+    - zyapjpemyy
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: phrrcyypkh
+    name: Banner
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ![Arrow](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/Banner.png)
+    order: 16
+    notes: []
+    chapters:
+    - zyapjpemyy
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: fxweblbvmn
+    name: Frame
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+
+
+
+      ![Arrow](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/SmallBox.png)
+    order: 17
+    notes: []
+    chapters:
+    - tzncewqrfv
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
+  - id: merothjhel
+    name: Button
+    shared_name: 
+    status: 0
+    blurb: >-
+      # $[objectname]
+
+
+      ## Button short
+
+      ![buttonShortHighSaturation](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/ButtonShort.png)
+
+
+      ![buttonShortLowSaturation](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/ButtonShortLow.png)
+
+
+      ## Button long
+
+      ![buttonLongHighSaturation](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/ButtonLong.png)
+
+
+      ![buttonLongLowSaturation](https://raw.githubusercontent.com/nookyroo/EoDGamified/refs/heads/main/EchoesOfDiscordiaGamified/Images/Assets/ButtonLongLow.png)
+    order: 18
+    notes: []
+    chapters: []
+    consumables: []
+    shared: true
+    access_roles: []
+    primaryid: 
+    prominence: 
+    alias: 
+    children: []
+    statblock: 
+    subtype: information
